@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="147F1ED4-355D-0AEB-6FEB-BA8924D2872E" name="TBL_PERSONA">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERSONA" id="AAC2C7B7-F52E-20EE-3A0A-32F012061C01">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="A4CF6656-01C9-22A6-F0C7-1F8361662F6F">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDO" id="0E7C226B-6D21-FAB2-86AD-30B4DA2982C4">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DE_NACIMIENTO" id="F24415B3-AD29-FEB9-EF8F-86D3A31D7163">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO" id="36C13676-8EF8-0724-244D-BC9CF42AEAFB">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="4987BEF1-C26D-17BC-4EBE-15F0A8FEFF10">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DIRECCION" id="E089337A-33C9-4F40-BC51-4789BDB5002F">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A2591F6-7E84-16AE-0C0D-7CFCBC6E6F0E" referredColumn="8231B558-125C-3356-4632-5B69D8B86FC0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C864404-969E-0F76-A2DA-B5914505EBBB" name="TBL_PERSONA_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAC2C7B7-F52E-20EE-3A0A-32F012061C01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCAA9CB3-C9CB-CB38-6A14-DA58E397A905" name="TBL_PERSONA_TBL_DIRECCION_FK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E089337A-33C9-4F40-BC51-4789BDB5002F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

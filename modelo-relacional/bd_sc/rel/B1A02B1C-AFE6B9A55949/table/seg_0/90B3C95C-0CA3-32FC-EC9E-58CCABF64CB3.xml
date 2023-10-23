@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90B3C95C-0CA3-32FC-EC9E-58CCABF64CB3" name="TB_PLAYLIST">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:34:55 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLAYLIST" id="4AD5D199-1141-8593-C657-A4A8A9399402">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:54:42 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="6E435516-13D9-B0D7-2CA8-9075F8D327CE">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:54:42 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="EEDA796C-A20B-A17F-2BB9-D761FFC65D9D">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:54:42 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOR_PLAYLIST" id="834B2BAE-BE71-A891-FEC0-CCCAB4B27F20">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:54:42 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_CANCION_ID_CANCION" id="04C79CB1-7C6E-3FD0-7030-2EFB469817F2">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:01:30 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93C8C517-F21D-C20B-41C9-F3ED7D793637" referredColumn="7F80D4E4-D877-D803-B663-2ABA87A5ED53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85EDD22D-E705-8053-47BB-6E216C2C5674" name="TB_PLAYLIST_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:54:42 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD5D199-1141-8593-C657-A4A8A9399402"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C92DE08-865B-8C4E-9AE0-C787AB75AA6A" name="TB_PLAYLIST_TB_CANCION_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:01:30 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04C79CB1-7C6E-3FD0-7030-2EFB469817F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

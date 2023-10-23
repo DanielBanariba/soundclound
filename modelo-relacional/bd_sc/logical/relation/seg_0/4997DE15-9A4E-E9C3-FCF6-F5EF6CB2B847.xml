@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_CUENTA_TBL_TIPO_USUARIO_FK" directorySegmentName="seg_0" id="4997DE15-9A4E-E9C3-FCF6-F5EF6CB2B847">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>71D571DD-4ED2-0EFA-1E60-F91B5B77C6E4</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<sourcePk>4A095DEE-1597-1540-4A98-1838186EF574</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>529CCDB1-DA3E-4FA5-C9C6-6D0513389AD8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7452F82C-853D-AF9D-5563-F9FA36594B13</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

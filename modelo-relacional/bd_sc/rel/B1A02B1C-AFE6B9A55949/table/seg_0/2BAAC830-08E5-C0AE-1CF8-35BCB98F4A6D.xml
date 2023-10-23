@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BAAC830-08E5-C0AE-1CF8-35BCB98F4A6D" name="TB_TIPO_MEMBRESIA">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:01:19 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_MEMBRESIA" id="BCCB94CC-13A1-1BCE-ECD4-26AB749A244F">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASICA" id="5E240985-A4F2-43FE-0156-9FDDF21B5427">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLATA" id="672D0F84-6BCE-2A5C-2F95-9D938DE10AA7">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORO" id="B24BFEF2-1CB9-2838-83AA-DE754E0E0D1A">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILIAR" id="5FFCF88E-6786-6405-8E3D-4C01DDBEC22F">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="BC8DD25F-FCCD-3171-C787-2866513DA28C">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C92D6E2-D096-E242-26AB-11C3AB198E6B" name="TB_TIPO_MEMBRESIA_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:05:51 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCCB94CC-13A1-1BCE-ECD4-26AB749A244F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<impliedForeignKeys itemClass="oracle.dbtools.crest.model.design.relational.ImpliedForeignKey">
+<impliedForeignKey name="ImpliedForeignKey_1" id="2AA6B469-BDC4-C076-79CA-953BF9C70B99">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:09:04 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+</impliedForeignKey>
+</impliedForeignKeys>
+</Table>

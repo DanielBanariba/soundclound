@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A64D39D-3EA7-0153-3DAE-A2D87BFD0DD4" name="TBL PERSONA">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>147F1ED4-355D-0AEB-6FEB-BA8924D2872E</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID PERSONA" id="3845EAC7-B816-F97B-BEFB-2F08A891EAB0">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>AAC2C7B7-F52E-20EE-3A0A-32F012061C01</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="0498580D-BB8C-126E-0455-1904932D4629">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>A4CF6656-01C9-22A6-F0C7-1F8361662F6F</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APELLIDO" id="04DF08EC-B81C-9E85-E60A-FCF04C046614">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>0E7C226B-6D21-FAB2-86AD-30B4DA2982C4</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA DE NACIMIENTO" id="F7A16C9A-D33F-4912-DCCF-004C7CEB0DCA">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>F24415B3-AD29-FEB9-EF8F-86D3A31D7163</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CORREO" id="86AE602C-F556-357C-3267-C7257BF22A55">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>36C13676-8EF8-0724-244D-BC9CF42AEAFB</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEFONO" id="C7AD09AA-D281-81A0-5939-4AA7020012C8">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>4987BEF1-C26D-17BC-4EBE-15F0A8FEFF10</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID DIRECCION" id="94663AC5-CA9F-AF4A-E2B1-CC48C27A745E">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>DC46051A-F522-3BA6-1D90-84A213DDC270</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<referedAttribute>A1428E0E-3959-6710-5DCF-CDB256A5E6C8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F520DA9-0818-9BC4-0FC0-28682FE5EC45" name="TBL PERSONA PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>0C864404-969E-0F76-A2DA-B5914505EBBB</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3845EAC7-B816-F97B-BEFB-2F08A891EAB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

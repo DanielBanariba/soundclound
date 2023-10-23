@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A252076-EA58-8DC5-F6B2-29563D39F3F2" name="TBL_USUARIO">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="8DF5E1E0-4433-4404-6F5E-5959EE24D0D6">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_USUARIO" id="C27681E2-63A3-8F61-32E8-66580A485536">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLAVE" id="1A8A5E09-D38A-D169-1738-EC26E33C2F87">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11C7FB45-4326-8FC1-5630-E8C3BD4236F2" name="TBL_USUARIO_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF5E1E0-4433-4404-6F5E-5959EE24D0D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

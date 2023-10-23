@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D7E3EDE-44BA-35F3-D393-C0EC2BF16396" name="TBL DIRECCION">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>D4C9B441-53B8-4CA8-F03D-7AB9BA80EEA5</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID DIRECCION" id="A1428E0E-3959-6710-5DCF-CDB256A5E6C8">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>8231B558-125C-3356-4632-5B69D8B86FC0</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAIS" id="29E67D7C-EC32-B49C-93EF-C103C7F84379">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>1C13C9D6-6E7E-1A06-BE26-B6E153D0788B</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID DEPARTAMENTO" id="EBF92831-E63A-3260-11EC-680B012EAD48">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>E1772B13-D210-EAD3-7B8E-BA8AB0A810CA</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<referedAttribute>75770762-A2EE-D992-CB06-DAA90A3B3F58</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39ED29E4-C45D-CC8C-3BF2-4F6B65207B87" name="TBL DIRECCION PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>0340FF56-8311-7479-2D07-F24956D28D9A</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1428E0E-3959-6710-5DCF-CDB256A5E6C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

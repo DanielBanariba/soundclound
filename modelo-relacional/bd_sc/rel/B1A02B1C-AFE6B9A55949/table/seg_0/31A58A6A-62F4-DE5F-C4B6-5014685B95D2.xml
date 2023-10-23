@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31A58A6A-62F4-DE5F-C4B6-5014685B95D2" name="TB_SEGUIDORES">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:20:19 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SEGUIDOR" id="B5979C3D-ED9D-343C-CE74-029C47A0DA3F">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:22:58 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_COMIENZO" id="46E5F227-445E-3283-0866-E255B13AA354">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:22:58 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_DEJO_SEGUIR" id="1AD5ACA7-E792-4E60-974D-EDE537A07AD0">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:22:58 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_ARTISTA_ID_ARTISTA" id="D35C35AC-A0A9-82A6-27AB-AE295F28A205">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:02:56 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43E9C33A-4973-C643-C02B-7FDCE6B8D90D" referredColumn="4E0C80A9-B5C1-BFD5-6B9D-321F010275BF"/>
+</associations>
+</Column>
+<Column name="ID_CUENTA" id="110D4D93-139C-F280-84C2-DCB67CE4CF3C">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:59:59 UTC</createdTime>
+<generatorID>A4A8FC35-4663-D5AE-B43C-F1B68D7261DC</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78512694-F57F-6EE9-5187-D445B8784D16" referredColumn="1A450555-BCC5-A058-7299-0036CF14FE40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8210FEA9-43DA-2D0D-821D-AC17D7291B0F" name="TB_SEGUIDORES_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:22:58 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5979C3D-ED9D-343C-CE74-029C47A0DA3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1849F89E-C23E-26F4-3763-B21069D84F42" name="TB_SEGUIDORES_TB_ARTISTA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:02:56 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D35C35AC-A0A9-82A6-27AB-AE295F28A205"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4095649-2819-685B-5AAF-379CA2EC1D04" name="TB_SEGUIDORES_TBL_CUENTA_FK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:59:59 UTC</createdTime>
+<generatorID>B1A83C81-9205-01DA-FDAA-3201C2FB4A07</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="110D4D93-139C-F280-84C2-DCB67CE4CF3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

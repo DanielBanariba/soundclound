@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CF20A30-C939-2A2B-406C-44A1EBD91F26" name="TB PLAYLIST">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>90B3C95C-0CA3-32FC-EC9E-58CCABF64CB3</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID PLAYLIST" id="4AA8ECEA-BF17-8805-0470-2E02D114827D">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>4AD5D199-1141-8593-C657-A4A8A9399402</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="ED42B3F5-98F4-1D1B-64F0-3535F878288F">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>6E435516-13D9-B0D7-2CA8-9075F8D327CE</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA CREACION" id="1F8FAC86-37D4-B0A6-DF98-C56941A94013">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>EEDA796C-A20B-A17F-2BB9-D761FFC65D9D</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTOR PLAYLIST" id="B0248448-393A-ACCE-307B-8BEA555648D4">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>834B2BAE-BE71-A891-FEC0-CCCAB4B27F20</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TB CANCION ID CANCION" id="5E9F5EA6-4BED-5A53-A859-2B4EF14F4420">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>AB7CB5E5-61C3-D0BF-CC67-19D7A14158E5</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<referedAttribute>4B0A5F6C-60D5-3C30-B672-160CE3DCDA2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D8FA6150-AA55-000E-E8BC-8C1FCE1ABD1D" name="TB PLAYLIST PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>85EDD22D-E705-8053-47BB-6E216C2C5674</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4AA8ECEA-BF17-8805-0470-2E02D114827D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

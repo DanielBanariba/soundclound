@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_CATALOGO_TB_ARTISTA_FK" directorySegmentName="seg_0" id="2382CBE2-85A4-6E96-A88A-32639260B5B4">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>C9B92039-BA3D-6562-A340-143A729EA4F0</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<sourcePk>E38195B8-F647-7163-1B27-DF4E86530334</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>67AF22E4-49B4-A7E5-0C65-4CDE0DA3260D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1400EF74-FB39-2D54-EE84-725DF21D2E19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

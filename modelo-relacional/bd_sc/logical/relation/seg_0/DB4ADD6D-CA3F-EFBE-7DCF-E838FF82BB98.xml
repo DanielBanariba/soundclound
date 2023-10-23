@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_CATALOGO_TB_CANCION_FK" directorySegmentName="seg_0" id="DB4ADD6D-CA3F-EFBE-7DCF-E838FF82BB98">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>118885CF-76E2-344A-DB12-CFC74B673ACF</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<sourcePk>0FEA1BC5-3F41-2A23-E9CA-4AA0B55B65AC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B34ED7BD-9C7A-4BFF-B14E-A13C5B049B9B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1400EF74-FB39-2D54-EE84-725DF21D2E19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

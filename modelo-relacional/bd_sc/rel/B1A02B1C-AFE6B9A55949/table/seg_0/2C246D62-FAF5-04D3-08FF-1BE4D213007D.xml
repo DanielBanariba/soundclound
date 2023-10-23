@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C246D62-FAF5-04D3-08FF-1BE4D213007D" name="DEPARTAMENTOS">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO" id="76DE0BD5-876B-C919-76FC-CC514AFADF80">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="0ABE0726-1408-F079-A6CB-365C2867A41E">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2924220C-3FD8-6E92-858F-758DD5B5A844" name="DEPARTAMENTOS_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76DE0BD5-876B-C919-76FC-CC514AFADF80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

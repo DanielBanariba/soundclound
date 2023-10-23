@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC2FA1F8-4778-11D3-821B-AE153928003F" name="TBL_TIPO_USUARIO">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_USUARIO" id="4B26FAFF-0F00-02D6-063A-BBD0B526AA9B">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE" id="26804231-859B-AF20-16D3-19F8DF574FDD">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADMIN" id="3B77084A-E6C1-E140-79B1-347AF314D49B">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CD238EB-0011-791E-8C35-F33E69C89B43" name="TBL_TIPO_USUARIO_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B26FAFF-0F00-02D6-063A-BBD0B526AA9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

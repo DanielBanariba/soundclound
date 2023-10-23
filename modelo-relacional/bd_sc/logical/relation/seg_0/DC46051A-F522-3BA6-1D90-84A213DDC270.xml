@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TBL_PERSONA_TBL_DIRECCION_FK" directorySegmentName="seg_0" id="DC46051A-F522-3BA6-1D90-84A213DDC270">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:37:26 UTC</createdTime>
+<generatorID>7A2591F6-7E84-16AE-0C0D-7CFCBC6E6F0E</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<engineerTo>
+<item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
+</engineerTo>
+<sourcePk>39ED29E4-C45D-CC8C-3BF2-4F6B65207B87</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0D7E3EDE-44BA-35F3-D393-C0EC2BF16396</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0A64D39D-3EA7-0153-3DAE-A2D87BFD0DD4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

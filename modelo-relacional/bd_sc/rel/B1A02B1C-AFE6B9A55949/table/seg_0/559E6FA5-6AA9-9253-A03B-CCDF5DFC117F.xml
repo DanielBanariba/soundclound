@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="559E6FA5-6AA9-9253-A03B-CCDF5DFC117F" name="TB_MEMBRESIAS">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 21:38:32 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MEMBRESIA" id="05C42C63-FEE0-2049-8445-377820F0FF02">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:01:15 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="D271C019-2BFB-AB1F-D7C8-4A0DF7D84146">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:01:15 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_TIPO_MEMBRESIA_ID_TIPO_MEMBRESIA" id="CDE78B0C-2D5F-4B95-8126-6DB7940237CE">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:57:37 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31829A54-1D33-2C2D-C3FD-10F329E4861B" referredColumn="BCCB94CC-13A1-1BCE-ECD4-26AB749A244F"/>
+</associations>
+</Column>
+<Column name="ID_CUENTA" id="39C8B716-B328-FA22-1DD3-6FCEE3490241">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:59:59 UTC</createdTime>
+<generatorID>4356D130-AA43-9DD7-8D6B-969BF393F9B5</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8689D6C-01E3-BF13-61E7-FA11FAC46617" referredColumn="1A450555-BCC5-A058-7299-0036CF14FE40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF4D9C9B-A1C6-32AC-4B6B-C0AC49A91DF9" name="TB_MEMBRESIAS_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:01:15 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05C42C63-FEE0-2049-8445-377820F0FF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2778D552-8AD0-507F-A3D1-3120FEE7D809" name="TB_MEMBRESIAS__IDX">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:59:59 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>FB869C0B-2C0B-2737-90A9-043D8A8464C4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="39C8B716-B328-FA22-1DD3-6FCEE3490241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98B712D2-12F2-AB72-709A-B44A40BCF02A" name="TB_MEMBRESIAS_TB_TIPO_MEMBRESIA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:57:37 UTC</createdTime>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDE78B0C-2D5F-4B95-8126-6DB7940237CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88021C90-B708-47C7-82DB-35EDA7F3EA56" name="TB_MEMBRESIAS_TBL_CUENTA_FK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:59:59 UTC</createdTime>
+<generatorID>FB869C0B-2C0B-2737-90A9-043D8A8464C4</generatorID>
+<ownerDesignName>bd_sc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C8B716-B328-FA22-1DD3-6FCEE3490241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

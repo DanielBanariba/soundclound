@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46344B7B-DC39-115C-144B-BAD83E15074B" name="TB_ALBUM">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:29:38 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ALBUM" id="2E0A079D-4E0F-798B-5B31-E938734B734F">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:34:10 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="AB5B3E0F-4CAB-632A-0E4B-0BD8CDE7B2AB">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:34:10 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO" id="777A9C59-6D3F-80FA-A6BB-DD942F9C32A6">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:34:10 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_ARTISTA_ID_ARTISTA" id="DF4E00CB-7E79-22C7-AE12-295E3DFCFB50">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:03:35 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3A0684B-398B-1DAE-9420-2F7800CC055F" referredColumn="4E0C80A9-B5C1-BFD5-6B9D-321F010275BF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C57DE77B-3B36-4DC3-C688-FEACD913EA4F" name="TB_ALBUM_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:34:10 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E0A079D-4E0F-798B-5B31-E938734B734F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED7693AF-2ABF-3611-7407-383BF10904FD" name="TB_ALBUM_TB_ARTISTA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 23:03:35 UTC</createdTime>
+<ownerDesignName>BD_SC2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF4E00CB-7E79-22C7-AE12-295E3DFCFB50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
