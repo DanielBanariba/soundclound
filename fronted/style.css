@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #ff5500 !important;
+}
+
+.mx-auto {
+    margin-: 0 !important;
+}
+
+.btn-primary {
+    background-color: rgb(35, 39, 46) !important;
+    margin-right: 10px !important;
+    border: 0.2px solid white !important;
+}
+
+.btn-success {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    margin-right: 10px !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+
+.letra-o {
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: -10px;
+}
+
+.btn-subir-musica {
+    margin-right: 10rem;
+    padding: 0;
+}
