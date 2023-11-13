@@ -14,6 +14,9 @@ Acceder a la carpeta venv, scripts y por ultimo activarlo, y ya estaremos en el 
 
 Instalar las dependencia necesarias
   >pip install fastapi
+  >pip install cx_Oracle 
+
+Nota: Si le sale error al momento de querer instalar cx_Oracle, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. Link: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
 
 Levantar el servidor
   >python -m uvicorn main:app –reload

@@ -25,7 +25,7 @@ try:
 except Exception as ex:
     print("Error en la connexion a la base de datos", ex)
 else:
-    print("Conectado a Oracle Database", conexion.version)
+    print("Conectado a Oracle Database", connection.version)
 finally:
     connection.close()
     print("Conexcion Finalizada")
