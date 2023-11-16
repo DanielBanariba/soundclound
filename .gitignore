@@ -4,4 +4,3 @@ env
 
 # Ignora la carpeta que genera automaticamente el fastAPI
 __pycache__
-

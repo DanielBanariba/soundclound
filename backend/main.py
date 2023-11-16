@@ -1,9 +1,12 @@
-from fastapi import FastAPI
-from fastapi import APIRouter
+from fastapi import FastAPI, APIRouter
 # importamos los archivos de la carpeta router
 from routers import products, users, audio
 # Nos permite exponer archivos estaticos como imagenes o en mi caso musica
 from fastapi.staticfiles import StaticFiles 
+# Devuelve el archivo de audio
+from fastapi.responses import StreamingResponse
+from os import getcwd, path
+from conexion_oracle import conectar_a_oracle
 
 app = FastAPI()
 
@@ -36,3 +39,11 @@ async def root():
 @app.get("/url")
 async def url():
     return {"url": "http://www.danielbanariba.com"}
+
+
+#---------------------PerPlesity------------------------
+
+app.mount("/audios", StaticFiles(directory="audios"), name="audios")
+
+if __name__ == "__main__":
+    crear_tabla_audio()

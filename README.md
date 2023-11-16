@@ -13,15 +13,22 @@ Acceder a la carpeta venv, scripts y por ultimo activarlo, y ya estaremos en el 
   >cd venv/env/Scripts/Activate.ps1
 
 Instalar las dependencia necesarias
-  >pip install fastapi
-  >pip install "uvicorn[standard]"
-  >pip install oracledb 
+  - pip install fastapi
+  - pip install "uvicorn[standard]"
+  - pip install oracledb
+  - pip install python-multipart
+
+
   
-  Nota: Si le sale error al momento de querer instalar oracledb, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. Link: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
+  Nota: Si le sale error al momento de querer instalar oracledb, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. 
+   >Link: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
 
 Levantar el servidor
-  >python -m uvicorn main:app –reload
+  - python -m uvicorn main:app –reload
+  
+Si va a levatar el servidor desde visual studio code
+  - uvicorn main:app
 
-Acceder a la documentación es por medio de la url y al final pornele docs: 
-  127.0.0.1:8000/docs  
-  127.0.0.1:8000/recdo
+Acceder a la documentación es por medio de la url: 
+  > 127.0.0.1:8000/docs  
+  > 127.0.0.1:8000/recdo

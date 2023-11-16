@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio</title>
+</head>
+<body>
+    <audio id="audioPlayer" controls>
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <script>
+        // Realizar la solicitud a la API para obtener el audio
+        fetch('http://127.0.0.1:8000/audio/1') // Reemplaza con la URL de tu API y el ID del audio que deseas obtener
+            .then(response => response.blob())
+            .then(audioBlob => {
+                // Crear una URL para el audio blob
+                const audioURL = URL.createObjectURL(audioBlob);
+                // Asignar la URL al reproductor de audio
+                const audioPlayer = document.getElementById('audioPlayer');
+                audioPlayer.src = audioURL;
+                audioPlayer.play(); // Reproducir el audio automáticamente
+            })
+            .catch(error => {
+                console.error('Error al obtener el audio:', error);
+            });
+    </script>
+</body>
+</html>
