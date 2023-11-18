@@ -1,6 +1,6 @@
 from fastapi import APIRouter, File, UploadFile
 from fastapi.responses import FileResponse, StreamingResponse
-from conexion_oracle import conectar_a_oracle
+from config import oracle_config
 
 router = APIRouter(prefix="/audio",
                     tags=["audio"],

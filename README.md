@@ -30,6 +30,6 @@ Levantar el servidor
 Si va a levatar el servidor desde visual studio code
   - uvicorn main:app
 
-Acceder a la documentación es por medio de la url: 
-  > 127.0.0.1:8000/docs  
-  > 127.0.0.1:8000/recdo
+Ir a la documentación: 
+  Con Swagger: -127.0.0.1:8000/docs  
+  Con Redocly: -127.0.0.1:8000/recdo
