@@ -1,6 +1,30 @@
-# Ignora el entorno virtual creado 
-.venv
-env
+# Ignora el entorno virtual creado
 
 # Ignora la carpeta que genera automaticamente el fastAPI
+
+*.db
+
+*.py[cod]
+
+.venv
+
+.web
+
 __pycache__
+
+__pycache__/
+
+env
+
+#--------front
+web
+
+__pycache__
+
+assets
+
+soundclound
+
+requirements.txt
+
+rxconfig.py

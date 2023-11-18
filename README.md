@@ -16,6 +16,7 @@ Instalar las dependencia necesarias
   - pip install fastapi
   - pip install "uvicorn[standard]"
   - pip install oracledb
+  - pip install cx_Oracle
   - pip install python-multipart
 
 
