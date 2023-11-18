@@ -1,14 +1,8 @@
-from fastapi import FastAPI, APIRouter, File, UploadFile
+from fastapi import FastAPI, APIRouter
 # importamos los archivos de la carpeta router
-from routers import products, users, audio
-# Nos permite exponer archivos estaticos como imagenes o en mi caso musica
+from routers import products, users, audio, reproducir
+# Nos permite exponer archivos estaticos como imagenes o en este caso musica
 from fastapi.staticfiles import StaticFiles 
-# Devuelve el archivo de audio
-from fastapi.responses import StreamingResponse, JSONResponse
-import cx_Oracle
-from config import oracle_config
-from os import getcwd, path
-
 
 app = FastAPI()
 
@@ -19,6 +13,7 @@ router = APIRouter()
 router.include_router(products.router)
 router.include_router(users.router)
 router.include_router(audio.router)
+router.include_router(reproducir.router)
 
 # Incluimos el router en la aplicación FastAPI
 app.include_router(router)

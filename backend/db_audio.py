@@ -1,6 +1,7 @@
 from config import conectar_a_oracle
 
-def insertar_fila_audio(id, name, author, duration, file_path):
+
+def agregar_audio(id, name, author, duration, file_path):
     connection = conectar_a_oracle()
     cursor = connection.cursor()
     with open(file_path, "rb") as audio_file:
@@ -11,7 +12,8 @@ def insertar_fila_audio(id, name, author, duration, file_path):
     cursor.close()
     connection.close()
 
-def actualizar_fila_audio(id, name, author, duration, file_path):
+
+def actualizar_audio(id, name, author, duration, file_path):
     connection = conectar_a_oracle()
     cursor = connection.cursor()
     with open(file_path, "rb") as audio_file:
@@ -22,10 +24,18 @@ def actualizar_fila_audio(id, name, author, duration, file_path):
     cursor.close()
     connection.close()
 
-def eliminar_fila_audio(id):
+
+def eliminar_audio(id):
     connection = conectar_a_oracle()
     cursor = connection.cursor()
     cursor.execute("DELETE FROM audio_table WHERE id = :id", {"id": id})
     connection.commit()
     cursor.close()
     connection.close()
+
+#Si quieres ejecutar alguna funcion en especifico, solo quieta el comentario
+if __name__ == "__main__":
+    #agregar_audio()
+    #actualizar_audio()
+    #eliminar_audio()
+    pass#Comenta esto

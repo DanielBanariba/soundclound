@@ -1,8 +1,8 @@
 import cx_Oracle
 
-from config import oracle_config
+from config import conectar_a_oracle
 
-connection = oracle_config
+connection = conectar_a_oracle
 
 def crear_y_validar_tablas():
 # Verificar si la tabla ya existe en el esquema 'system'
