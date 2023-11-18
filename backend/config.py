@@ -9,7 +9,7 @@
 import cx_Oracle
 
 
-def oracle_config():
+def conectar_a_oracle():
 
     # Configuración de la conexión Oracle
     config = {
@@ -29,4 +29,4 @@ def oracle_config():
         return None
 
 if __name__ == "__main__":
-    oracle_config()
+    conectar_a_oracle()

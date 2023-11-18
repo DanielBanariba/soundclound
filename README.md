@@ -18,6 +18,7 @@ Instalar las dependencia necesarias
   - pip install oracledb
   - pip install cx_Oracle
   - pip install python-multipart
+  - pip install os
 
 
   
