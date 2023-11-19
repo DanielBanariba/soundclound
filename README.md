@@ -1,8 +1,11 @@
-# soundclound
-
-<div style="text-align:center">
-  <img src="backend\static\imagenes\soundcloud-icon-2048x888-k4c33ssc.png" alt="soundcloud" width="50%">
+<div align="center">
+  <h1 align="center">Soundcloud</a></h1>
 </div>
+
+<div align="center">
+  <img align="center" src="backend\static\imagenes\soundcloud-icon-2048x888-k4c33ssc.png" alt="soundcloud" width="50%">
+</div>
+<br>
 
 Ir a la documentacion para la creacion de un entorno virtual
 https://docs.python.org/3/library/venv.html
