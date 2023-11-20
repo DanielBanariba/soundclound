@@ -11,10 +11,8 @@ Ir a la documentacion para la creacion de un entorno virtual
 https://docs.python.org/3/library/venv.html
 
 Crear un entorno virtual
-  >python -m venv /path/to/new/virtual/environment
-
-O tambien con el comando
-  >python -m venv env
+  - >python -m venv /path/to/new/virtual/environment
+  - >python -m venv env
 
 Acceder a la carpeta venv, scripts y por ultimo activarlo, y ya estaremos en el entorno virtual
   >cd venv/env/Scripts/Activate.ps1
