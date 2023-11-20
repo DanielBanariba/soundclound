@@ -18,16 +18,19 @@ Acceder a la carpeta env, scripts
   >cd env/Scripts
 
 y por ultimo activarlo, y ya estaremos en el entorno virtual
-  >./activate.ps1
+  >.\activate.ps1
 
-Instalar las dependencia necesarias
+Instalar las dependencia necesarias:
+
+En un solo comando: 
+- pip install fastapi "uvicorn[standard]" oracledb cx_Oracle python-multipart
+  
+Oh uno por uno (Si es que tuvo problemas en instalarlo de un solo):
   - pip install fastapi
   - pip install "uvicorn[standard]"
   - pip install oracledb
   - pip install cx_Oracle
   - pip install python-multipart
-  - pip install os
-
 
   
   Nota: Si le sale error al momento de querer instalar oracledb, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. 
