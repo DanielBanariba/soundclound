@@ -23,24 +23,24 @@ y por ultimo activarlo, y ya estaremos en el entorno virtual
 Instalar las dependencia necesarias:
 
 En un solo comando: 
-- pip install fastapi "uvicorn[standard]" oracledb cx_Oracle python-multipart
+  - >pip install fastapi "uvicorn[standard]" oracledb cx_Oracle python-multipart
   
 Oh uno por uno (Si es que tuvo problemas en instalarlo de un solo):
-  - pip install fastapi
-  - pip install "uvicorn[standard]"
-  - pip install oracledb
-  - pip install cx_Oracle
-  - pip install python-multipart
+  - >pip install fastapi
+  - >pip install "uvicorn[standard]"
+  - >pip install oracledb
+  - >pip install cx_Oracle
+  - >pip install python-multipart
 
   
   Nota: Si le sale error al momento de querer instalar oracledb, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. 
    >Link: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
 
 Levantar el servidor
-  - python -m uvicorn main:app –reload
+  - >python -m uvicorn main:app –reload
   
 Si va a levatar el servidor desde visual studio code
-  - uvicorn main:app
+  - >uvicorn main:app
 
 Ir a la documentación: 
   Con Swagger: -127.0.0.1:8000/docs  
