@@ -15,7 +15,7 @@ Crear un entorno virtual
   - >python -m venv env
 
 Acceder a la carpeta venv, scripts y por ultimo activarlo, y ya estaremos en el entorno virtual
-  >cd venv/env/Scripts/Activate.ps1
+  >cd env/Scripts/Activate.ps1
 
 Instalar las dependencia necesarias
   - pip install fastapi
