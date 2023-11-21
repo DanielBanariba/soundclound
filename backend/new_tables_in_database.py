@@ -1,5 +1,4 @@
 import cx_Oracle
-
 from config import conectar_a_oracle
 
 connection = conectar_a_oracle

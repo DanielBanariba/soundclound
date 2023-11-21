@@ -3,7 +3,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>559E6FA5-6AA9-9253-A03B-CCDF5DFC117F</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -20,7 +20,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>05C42C63-FEE0-2049-8445-377820F0FF02</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -33,7 +33,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>D271C019-2BFB-AB1F-D7C8-4A0DF7D84146</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -47,7 +47,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>423098F9-51E9-2B25-ABA3-13AACBD8E41D</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -61,7 +61,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:56:10 UTC</createdTime>
 <generatorID>FB869C0B-2C0B-2737-90A9-043D8A8464C4</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -70,7 +70,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -78,7 +78,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>AF4D9C9B-A1C6-32AC-4B6B-C0AC49A91DF9</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>

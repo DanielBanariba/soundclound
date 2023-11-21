@@ -2,12 +2,11 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_20" directorySegmentName="seg_0" id="B1A83C81-9205-01DA-FDAA-3201C2FB4A07">
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:59:02 UTC</createdTime>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
 <sourcePk>2E6DD2B3-BFF3-86ED-B540-CD8813637B1F</sourcePk>
-<targetPk>52EA1E68-A054-E802-16B3-526969C29A30</targetPk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

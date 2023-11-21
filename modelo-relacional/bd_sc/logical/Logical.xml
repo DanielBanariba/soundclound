@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="EFBACE4C-7D80-EC40-8FAB-5913DE209899" mainViewID="D64E5E2C-80C0-B609-CC2F-CD98E66C9AA8">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:01:51 UTC</createdTime>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

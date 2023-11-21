@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="F836055D-02AC-0381-D6CD-27F2237B8B80">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:01:51 UTC</createdTime>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

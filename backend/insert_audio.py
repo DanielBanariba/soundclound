@@ -1,5 +1,4 @@
-import cx_Oracle
-import os
+import cx_Oracle, os
 from config import conectar_a_oracle
 
 # Obtener la configuración de la base de datos
@@ -18,8 +17,6 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
         with open(ruta_archivo_mp3, "rb") as file:
             mp3_data = file.read()
 
-        print("Archivo MP3 leído exitosamente ", mp3_data)
-
         # Insertar el archivo MP3 en la tabla
         cursor.execute("INSERT INTO system.AUDIOS (id, archivo_mp3) VALUES (seq.nextval, :mp3_data)", {'mp3_data': mp3_data})
 
@@ -28,7 +25,7 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
 
         # Imprime el ID del nuevo registro
         nuevo_id = cursor.execute("SELECT seq.currval FROM DUAL").fetchone()[0]
-        print(f"Subida exitosa. Nuevo ID: {nuevo_id}")
+        print(f"Subida exitosa. Nuevo de ID: {nuevo_id}")
 
     except Exception as e:
         print(f"Error al insertar el archivo MP3: {str(e)}")

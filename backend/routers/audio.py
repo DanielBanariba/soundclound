@@ -1,7 +1,7 @@
 from fastapi import APIRouter, File, UploadFile
 from fastapi.responses import FileResponse, StreamingResponse
 from config import conectar_a_oracle
-#from ..db_audio import agregar_audio, actualizar_audio, eliminar_audi
+from db_audio import agregar_audio, actualizar_audio, eliminar_audio
 
 
 router = APIRouter(prefix="/audio",
@@ -15,7 +15,7 @@ async def crear_audio(id: int, name: str, author: str, duration: int, audio_file
     with open(file_path, "wb") as audio:
         content = await audio_file.read()
         audio.write(content)
-    insertar_fila_audio(id, name, author, duration, file_path)
+    agregar_audio(id, name, author, duration, file_path)
     return {"message": "Canción creada exitosamente"}
 
 @router.get("/{id}")
@@ -41,10 +41,10 @@ async def actualizar_audio(id: int, name: str, author: str, duration: int, audio
     with open(file_path, "wb") as audio:
         content = await audio_file.read()
         audio.write(content)
-    actualizar_fila_audio(id, name, author, duration, file_path)
+    actualizar_audio(id, name, author, duration, file_path)
     return {"message": "Canción actualizada exitosamente"}
 
 @router.delete("/{id}")
 async def eliminar_audio(id: int):
-    eliminar_fila_audio(id)
+    eliminar_audio(id)
     return {"message": "Canción eliminada exitosamente"}

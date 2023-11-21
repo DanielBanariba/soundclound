@@ -4,6 +4,7 @@
 #Podemos hacer un nuevo archivo en la carpeta routers, donde exista un archivo de administrador.py y esta se va a 
 #Encargar en hacer el CRUD de la base de datos
 
+from config import conectar_a_oracle
 
 # Creamos la tabla audio_table
 def crear_tabla_audio():

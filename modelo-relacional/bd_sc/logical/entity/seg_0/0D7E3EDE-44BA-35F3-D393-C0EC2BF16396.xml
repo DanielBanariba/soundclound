@@ -3,7 +3,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>D4C9B441-53B8-4CA8-F03D-7AB9BA80EEA5</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -20,7 +20,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>8231B558-125C-3356-4632-5B69D8B86FC0</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -34,7 +34,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>1C13C9D6-6E7E-1A06-BE26-B6E153D0788B</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -49,7 +49,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>E1772B13-D210-EAD3-7B8E-BA8AB0A810CA</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -58,7 +58,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -66,7 +66,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>0340FF56-8311-7479-2D07-F24956D28D9A</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>

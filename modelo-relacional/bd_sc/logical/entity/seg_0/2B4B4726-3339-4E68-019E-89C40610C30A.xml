@@ -3,7 +3,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>31A58A6A-62F4-DE5F-C4B6-5014685B95D2</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -20,7 +20,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>B5979C3D-ED9D-343C-CE74-029C47A0DA3F</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -33,7 +33,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>46E5F227-445E-3283-0866-E255B13AA354</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -47,7 +47,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>1AD5ACA7-E792-4E60-974D-EDE537A07AD0</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -61,7 +61,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>75F85439-2C1E-90E3-CFF8-5F5241227011</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -75,7 +75,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:59:29 UTC</createdTime>
 <generatorID>B1A83C81-9205-01DA-FDAA-3201C2FB4A07</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
@@ -84,7 +84,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -92,7 +92,7 @@
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:37:26 UTC</createdTime>
 <generatorID>8210FEA9-43DA-2D0D-821D-AC17D7291B0F</generatorID>
-<ownerDesignName>bd_sc</ownerDesignName>
+<ownerDesignName>BD_SoundCloud2</ownerDesignName>
 <engineerTo>
 <item key="B1A02B1C-02EE-9E0D-17AC-AFE6B9A55949" value="true"/>
 </engineerTo>
