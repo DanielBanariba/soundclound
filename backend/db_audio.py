@@ -1,8 +1,13 @@
 from config import conectar_a_oracle
+import cx_Oracle
+# Obtener la configuración de la base de datos
+configuracion = conectar_a_oracle()
+
+# Conectar a la base de datos
+connection = cx_Oracle.connect(**configuracion)
 
 
 def agregar_audio(id, name, author, duration, file_path):
-    connection = conectar_a_oracle()
     cursor = connection.cursor()
     with open(file_path, "rb") as audio_file:
         audio_blob = audio_file.read()
@@ -14,7 +19,6 @@ def agregar_audio(id, name, author, duration, file_path):
 
 
 def actualizar_audio(id, name, author, duration, file_path):
-    connection = conectar_a_oracle()
     cursor = connection.cursor()
     with open(file_path, "rb") as audio_file:
         audio_blob = audio_file.read()
@@ -26,7 +30,6 @@ def actualizar_audio(id, name, author, duration, file_path):
 
 
 def eliminar_audio(id):
-    connection = conectar_a_oracle()
     cursor = connection.cursor()
     cursor.execute("DELETE FROM audio_table WHERE id = :id", {"id": id})
     connection.commit()
