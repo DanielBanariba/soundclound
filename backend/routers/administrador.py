@@ -69,18 +69,20 @@ def actualizar_fila_audio(id, name, author, duration, file_path):
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 # Eliminamos una fila en la tabla audio_table
-def eliminar_fila_audio():
+def eliminar_fila_audio(id: int):
     connection = conectar_a_oracle()
 
-    # Eliminamos la fila
-    cursor = connection.cursor()
-    cursor.execute("""
-        DELETE FROM audio_table
-        WHERE id = :id
-    """, {"id": id})
+    try:
+        # Eliminamos la fila
+        cursor = connection.cursor()
+        cursor.execute("""
+            DELETE FROM audio_table
+            WHERE id = :id
+        """, {"id": id})
 
-    connection.commit()
-    connection.close()
+        connection.commit()
+    finally:
+        connection.close()
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------

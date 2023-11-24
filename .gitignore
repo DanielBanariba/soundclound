@@ -36,3 +36,13 @@ fronted
 generar_datos.py
 
 jSON.py
+
+Lib
+
+site-packages
+
+node_modules
+
+package-lock.json
+
+package.json
