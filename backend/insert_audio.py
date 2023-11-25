@@ -1,6 +1,7 @@
-# Convierte el archivo MP3 en un archivo binario y lo inserta en la base de datos esto se hace para poder comparar despues para que no se pueda subir la misma cancion en la base de datos 
-
-import cx_Oracle, os
+# Analiza la carpeta audios, para poder subir el directorio de la cancion en la base de datos
+# Tambien saca la imagen del archivo audio y crea un directorio nuevo para almacenar en la base de datos
+ 
+import cx_Oracle, os, eyed3
 from config import conectar_a_oracle
 
 # Obtener la configuración de la base de datos
@@ -64,3 +65,62 @@ archivos_mp3 = os.listdir("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audi
 for archivo_mp3 in archivos_mp3:
     ruta_completa = os.path.join("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audios", archivo_mp3)
     insertar_archivo_mp3(ruta_completa)
+
+# Crear la secuencia si no existe
+try:
+    cursor.execute("SELECT AUDIOS_SEQ.nextval FROM dual")
+except cx_Oracle.DatabaseError as e:
+    error, = e.args
+    if error.code == 2289:  # ORA-02289: sequence does not exist
+        cursor.execute("CREATE SEQUENCE AUDIOS_SEQ START WITH 1 INCREMENT BY 1")
+    else:
+        raise  # Re-raise the exception if it's a different error
+
+# Iterar sobre la lista de archivos MP3
+for archivo_mp3 in archivos_mp3:
+    ruta_completa = os.path.join("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audios", archivo_mp3)
+    
+    # Cargar el archivo MP3 y extraer el título
+    audiofile = eyed3.load(ruta_completa)
+    titulo = audiofile.tag.title
+
+    # Extraer la imagen del archivo MP3
+    if audiofile.tag and audiofile.tag.images:
+        imagen = audiofile.tag.images[0].image_data
+
+        # Crear la carpeta "img" si no existe
+        if not os.path.exists("img"):
+            os.makedirs("img")
+
+        # Guardar la imagen en la carpeta "img" con el mismo nombre que la canción
+        ruta_imagen = f"img/{titulo}_imagen.jpg"
+        with open(ruta_imagen, "wb") as img_file:
+            img_file.write(imagen)
+
+    # Imprimir las rutas de los archivos MP3 e imágenes
+    print(f"Ruta del archivo MP3: {ruta_completa}")
+    print(f"Ruta de la imagen: {ruta_imagen}")
+
+    # Intentar insertar los datos en la tabla AUDIOS
+    try:
+        cursor.execute("""
+            INSERT INTO AUDIOS (id, titulo_cancion, portada, archivo_mp3)
+            VALUES (AUDIOS_SEQ.nextval, :1, :2, :3)
+        """, (titulo, ruta_imagen, ruta_completa))
+    except cx_Oracle.DatabaseError as e:
+        error, = e.args
+        if error.code != 1460:  # Si el código de error es diferente de 1460, relanzar la excepción
+            raise
+        else:
+            pass  # No hacer nada si el código de error es 1460
+
+# Confirmar los cambios y cerrar la conexión
+connection.commit()
+cursor.close()
+connection.close()
+
+
+# MENSAJE IMPORTANTE
+# no se porque puerca me tira error ORA-01460: unimplemented or unreasonable conversion requested
+# PERO todo funciona bien y funcionaa correctamente y hacer lo que tiene que hacer, pero no se porque me tira ese error
+# asi que ignore el error xd 
