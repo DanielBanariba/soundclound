@@ -19,6 +19,30 @@ router = APIRouter(prefix="/reproducir",
                     tags=["reproducir"], 
                     responses={404: {"message": "Cancion no encontrado"}})
 
+# Ruta para obtener y reproducir el archivo de audio
+@router.get("/canciones")
+async def get_all_audios():
+    # Consulta para obtener todos los audios desde la base de datos
+    query = "SELECT * FROM AUDIOS"
+    cursor.execute(query)
+    results = cursor.fetchall()
+
+    if results:
+        # Crear una lista para almacenar los resultados
+        audios = []
+        # Iterar sobre los resultados y agregar cada uno a la lista
+        for result in results:
+            audio = {
+                'id': result[0],
+                'ruta_archivo': result[1],
+                # Agregar más campos aquí si es necesario
+            }
+            audios.append(audio)
+
+        # Devolver la lista como una respuesta JSON
+        return audios
+    else:
+        raise HTTPException(status_code=404, detail="No se encontraron audios")
 
 # Ruta para obtener y reproducir el archivo de audio
 @router.get("/{audio_id}")
