@@ -32,7 +32,7 @@ Instalar las dependencia necesarias:
 
 En un solo comando: 
 ```sh
-pip install fastapi "uvicorn[standard]" oracledb cx_Oracle python-multipart jinja2 matplotlib
+pip install fastapi "uvicorn[standard]" oracledb cx_Oracle python-multipart jinja2 matplotlib eyed3
 ``` 
   
 Oh uno por uno (Si es que tuvo problemas en instalarlo de un solo):
@@ -57,6 +57,9 @@ pip install jinja2
 ```sh
 pip install matplotlib
 ```
+```sh
+pip install eyed3
+```
 
   
   Nota: Si le sale error al momento de querer instalar oracledb, le recomiendo que instale Microsoft C++ Build Tools le dejare un link para su facil acceso. 
@@ -75,3 +78,14 @@ uvicorn main:app
 Ir a la documentación: 
   Con Swagger: -127.0.0.1:8000/docs  
   Con Redocly: -127.0.0.1:8000/recdo
+
+
+OJO! NO HACER COMMIT HASTA QUE ESTE SEGURO DE QUE FUNCIONE CORECTAMENTE
+
+Fronted
+
+Instalar nodeJS entrando en el siguiente link:
+  - >https://nodejs.org/en
+
+Despues nos instalamos React usando el siguiente comando
+  - >npm install react react-dom
