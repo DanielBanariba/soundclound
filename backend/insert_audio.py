@@ -1,3 +1,5 @@
+# Convierte el archivo MP3 en un archivo binario y lo inserta en la base de datos esto se hace para poder comparar despues para que no se pueda subir la misma cancion en la base de datos 
+
 import cx_Oracle, os
 from config import conectar_a_oracle
 
@@ -16,6 +18,15 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
         # Leer el archivo MP3 como bytes
         with open(ruta_archivo_mp3, "rb") as file:
             mp3_data = file.read()
+
+        # Buscar la cancion en la base de datos
+        cursor.execute("SELECT * FROM system.AUDIOS WHERE archivo_mp3 = :mp3_data", {'mp3_data': mp3_data})
+        result = cursor.fetchone()
+
+        # Si la cancion ya existe, no se inserta
+        if result is not None:
+            print("No puedes subir esta cancion, porque tiene derechos de autor")
+            return
 
         # Insertar el archivo MP3 en la tabla
         cursor.execute("INSERT INTO system.AUDIOS (id, archivo_mp3) VALUES (seq.nextval, :mp3_data)", {'mp3_data': mp3_data})

@@ -1,6 +1,6 @@
-from fastapi import FastAPI, APIRouter, Request
+from fastapi import FastAPI, APIRouter, Request, Response
 # importamos los archivos de la carpeta router
-from routers import products, users, audio, reproducir
+from routers import products, users, audio, reproducir, copyright
 from fastapi.responses import FileResponse
 # Nos permite exponer archivos estaticos como archivos HTML
 from fastapi.staticfiles import StaticFiles
@@ -14,6 +14,7 @@ router = APIRouter()
 router.include_router(products.router)
 router.include_router(users.router)
 router.include_router(audio.router)
+router.include_router(copyright.router)
 router.include_router(reproducir.router)#127.0.0.1:8000/reproducir/<<El Nombre de la cancion>>
 
 # Incluimos el router en la aplicación FastAPI
@@ -33,6 +34,11 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 async def root(request: Request):
     return FileResponse('static/templates/index.html')
+
+#Esto es para que no salga el error de "Get /favicon.ico HTTP/1.1" 404 Not Found
+@app.get("/favicon.ico")
+async def favicon():
+    return Response(content="", media_type="image/x-icon")
 
 """"
 1. **Validación de datos**: Podrías usar Pydantic para validar los datos de entrada de tus endpoints. Por ejemplo, si tienes un endpoint que acepta un ID de producto, podrías usar un modelo Pydantic para asegurarte de que el ID es un número entero.
