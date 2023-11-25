@@ -1,6 +1,6 @@
 from fastapi import FastAPI, APIRouter, Request, Response
 # importamos los archivos de la carpeta router
-from routers import products, users, audio, reproducir, copyright
+from routers import products, users, audio, reproducir, copyright, count
 from fastapi.responses import FileResponse
 # Nos permite exponer archivos estaticos como archivos HTML
 from fastapi.staticfiles import StaticFiles
@@ -15,6 +15,7 @@ router.include_router(products.router)
 router.include_router(users.router)
 router.include_router(audio.router)
 router.include_router(copyright.router)
+router.include_router(count.router)
 router.include_router(reproducir.router)#127.0.0.1:8000/reproducir/<<El Nombre de la cancion>>
 
 # Incluimos el router en la aplicación FastAPI
