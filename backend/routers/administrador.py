@@ -1,5 +1,3 @@
-#-------------------------------Hecho por GoogleBARD---------------------------------------#
-
 #Lo que pude entender es un CRUD, pero usando python, entonces...
 #Podemos hacer un nuevo archivo en la carpeta routers, donde exista un archivo de administrador.py y esta se va a 
 #Encargar en hacer el CRUD de la base de datos

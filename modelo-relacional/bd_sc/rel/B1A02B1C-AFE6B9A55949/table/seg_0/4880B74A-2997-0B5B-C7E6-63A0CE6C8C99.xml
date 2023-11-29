@@ -46,6 +46,20 @@
 <colAssociation fkAssociation="7215F5FA-9513-9CAF-2864-FD602D2D8AE5" referredColumn="0CEA2E5D-D87A-9C1A-0871-78EE22B87F1A"/>
 </associations>
 </Column>
+<Column name="ID_GRUPO" id="0F13FE0C-57E3-9BC5-9255-35D2BF368084">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:01:28 UTC</createdTime>
+<ownerDesignName>soundcloud_wg</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFEDAD8C-31DB-F1FE-BB3D-A3E9D29A59FA" referredColumn="CD72EDE0-DA90-041B-E5C3-9990E4AF9461"/>
+</associations>
+</Column>
 <Column name="NOMBRE" id="7292C9C6-970A-8454-7396-FEF26F7FD13B">
 <createdBy>ferna</createdBy>
 <createdTime>2023-10-22 22:29:30 UTC</createdTime>
@@ -131,6 +145,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="20344D28-3B06-F92C-B9A7-7F732F99C881"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35F17F8F-40B0-47FA-DCE3-640839B37042" name="TB_CANCIONES_TBL_GRUPOS_FK">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:01:28 UTC</createdTime>
+<ownerDesignName>soundcloud_wg</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F13FE0C-57E3-9BC5-9255-35D2BF368084"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

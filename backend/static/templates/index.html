@@ -62,11 +62,6 @@
 
     </div>
 
-    <audio controls>
-        <source src="http://127.0.0.1:8000/reproducir/19" type="audio/mpeg">
-    </audio>
-
-
     <!--<script src="controler.js"></script>-->
 
     <script>
@@ -78,6 +73,7 @@
         fetch('http://127.0.0.1:8000/count/')
             .then(response => response.json()) // Convertimos la respuesta a formato JSON
             .then(data => {
+                console.log(data)
                 jsonData = data.ids; // Almacenamos los IDs de los audios en nuestra variable
                 generarBotonesDeReproduccion(); // Llamamos a la función para generar los botones de reproducción
             });
@@ -85,6 +81,7 @@
         // Función para generar los botones de reproducción
         function generarBotonesDeReproduccion() {
             let audioElements = ''; // Inicializamos una variable para almacenar los elementos de audio
+            // console.log(jsonData)
             jsonData.forEach(id => { // Iteramos sobre cada ID en nuestros datos
                 // Para cada ID, creamos un elemento de audio y lo agregamos a nuestra variable
                 audioElements += `

@@ -93,6 +93,20 @@
 <colAssociation fkAssociation="4A77D556-91AF-8CD6-CF71-994D6F2EF765" referredColumn="8231B558-125C-3356-4632-5B69D8B86FC0"/>
 </associations>
 </Column>
+<Column name="ID_GRUPO" id="FF7B4173-1CBC-33B5-D89B-9EDE1F49309F">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:03:01 UTC</createdTime>
+<ownerDesignName>soundcloud_wg</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DD2319A-931F-5362-CBD9-C916D5AA3FC8" referredColumn="CD72EDE0-DA90-041B-E5C3-9990E4AF9461"/>
+</associations>
+</Column>
 <Column name="NOMBRE_USUARIO" id="C27681E2-63A3-8F61-32E8-66580A485536">
 <createdBy>banar</createdBy>
 <createdTime>2023-10-23 00:33:45 UTC</createdTime>
@@ -198,6 +212,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A6992713-3560-0D66-DFE9-211B8929DB7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ECD92DB-A798-0FFD-3997-A62521DB87D8" name="TBL_USUARIOS_TBL_GRUPOS_FK">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:03:01 UTC</createdTime>
+<ownerDesignName>soundcloud_wg</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF7B4173-1CBC-33B5-D89B-9EDE1F49309F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

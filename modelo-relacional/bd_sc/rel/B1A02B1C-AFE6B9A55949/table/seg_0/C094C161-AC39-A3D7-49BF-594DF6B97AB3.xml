@@ -22,6 +22,16 @@
 <colAssociation fkAssociation="A8824620-A5C9-56E5-9D68-AAB92E9FBD08" referredColumn="AAC2C7B7-F52E-20EE-3A0A-32F012061C01"/>
 </associations>
 </Column>
+<Column name="NOMBRE_ARTISTA" id="C355ACBC-9CD2-2C65-2219-33591D73B48A">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:55:33 UTC</createdTime>
+<ownerDesignName>soundcloud_wg</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="DESCRIPCION" id="5A5971C2-7577-510F-A1DA-0D7D6FCD1EBF">
 <createdBy>ferna</createdBy>
 <createdTime>2023-10-22 22:26:52 UTC</createdTime>

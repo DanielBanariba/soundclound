@@ -1,8 +1,15 @@
 # Analiza la carpeta audios, para poder subir el directorio de la cancion en la base de datos
 # Tambien saca la imagen del archivo audio y crea un directorio nuevo para almacenar en la base de datos
  
-import cx_Oracle, os, eyed3
+import cx_Oracle, os, eyed3, sys
+sys.path.append(os.path.join(os.getcwd(), 'backend'))#Obtener la ruta del directorio actual y concatenarla con el subdirectorio de los archivos de audio
 from config import conectar_a_oracle
+
+# Obtener la ruta del directorio actual
+directorio_actual = os.getcwd()
+
+# Concatenar la ruta del directorio actual con el subdirectorio de los archivos de audio
+ruta_audios = os.path.join(directorio_actual, 'backend', 'audios')
 
 # Obtener la configuración de la base de datos
 configuracion = conectar_a_oracle()
@@ -37,10 +44,16 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
 
         # Imprime el ID del nuevo registro
         nuevo_id = cursor.execute("SELECT seq.currval FROM DUAL").fetchone()[0]
-        print(f"Subida exitosa. Nuevo de ID: {nuevo_id}")
+        
+        # Extraer el nombre de la canción de la ruta del archivo
+        nombre_cancion = os.path.basename(ruta_archivo_mp3)
+        # Imprimir el mensaje
+        print(f"La canción '{nombre_cancion}' ha sido insertada exitosamente, el nuevo de ID es: {nuevo_id}")
 
     except Exception as e:
-        print(f"Error al insertar el archivo MP3: {str(e)}")
+        #Si no funciona, descomentar esta parte para observar donde estae l error
+        #print(f"Error al insertar el archivo MP3: {str(e)}") #
+        None
     finally:
         # Cerrar el cursor solo si está abierto
         if cursor:
@@ -59,11 +72,11 @@ except cx_Oracle.DatabaseError as e:
         raise
 
 # Obtener la lista de archivos en el directorio
-archivos_mp3 = os.listdir("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audios")
+archivos_mp3 = os.listdir(ruta_audios)
 
 # Iterar sobre la lista de archivos e insertar cada uno
 for archivo_mp3 in archivos_mp3:
-    ruta_completa = os.path.join("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audios", archivo_mp3)
+    ruta_completa = os.path.join(ruta_audios, archivo_mp3)
     insertar_archivo_mp3(ruta_completa)
 
 # Crear la secuencia si no existe
@@ -74,11 +87,11 @@ except cx_Oracle.DatabaseError as e:
     if error.code == 2289:  # ORA-02289: sequence does not exist
         cursor.execute("CREATE SEQUENCE AUDIOS_SEQ START WITH 1 INCREMENT BY 1")
     else:
-        raise  # Re-raise the exception if it's a different error
+        raise 
 
 # Iterar sobre la lista de archivos MP3
 for archivo_mp3 in archivos_mp3:
-    ruta_completa = os.path.join("C:\\Users\\banar\\Desktop\\soundclound\\backend\\audios", archivo_mp3)
+    ruta_completa = os.path.join(ruta_audios, archivo_mp3)
     
     # Cargar el archivo MP3 y extraer el título
     audiofile = eyed3.load(ruta_completa)
