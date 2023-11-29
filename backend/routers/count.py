@@ -14,10 +14,11 @@ router = APIRouter(prefix="/count",
                     tags=["count"], 
                     responses={404: {"message": "ID no encontrado"}})
 
-@router.get("/")  # Reemplaza 'app' con 'router'
+@router.get("/") 
 async def get_ids():
     print("Obteniendo IDs de canciones")
-    cursor.execute('SELECT id FROM AUDIOS')
+    cursor.execute('SELECT * FROM AUDIOS') #Obtener todos la informacion de la tabla AUDIOS, PERO! solo se necesita el ID, cambiar la consulta en dado caso de error, osea cambiar en * por ID
     results = cursor.fetchall()
     ids = [row[0] for row in results]
     return {"ids": ids}
+
