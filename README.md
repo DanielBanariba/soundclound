@@ -78,14 +78,3 @@ uvicorn main:app
 Ir a la documentación: 
   Con Swagger: -127.0.0.1:8000/docs  
   Con Redocly: -127.0.0.1:8000/recdo
-
-
-OJO! NO HACER COMMIT HASTA QUE ESTE SEGURO DE QUE FUNCIONE CORECTAMENTE
-
-Fronted
-
-Instalar nodeJS entrando en el siguiente link:
-  - >https://nodejs.org/en
-
-Despues nos instalamos React usando el siguiente comando
-  - >npm install react react-dom
