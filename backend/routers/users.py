@@ -1,39 +1,56 @@
 from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel
+from datetime import datetime
+import cx_Oracle, os, sys
+sys.path.append(os.path.join(os.getcwd(), 'backend'))#Obtener la ruta del directorio actual y concatenarla con el subdirectorio de los archivos de audio
+from config import conectar_a_oracle
+
+# Obtener la configuración de la base de datos
+configuracion = conectar_a_oracle()
+
+# Conectar a la base de datos
+connection = cx_Oracle.connect(**configuracion)    
+cursor = connection.cursor()
 
 router = APIRouter(prefix="/users", 
                     tags=["users"], 
                     responses={404: {"message": "No encontrado"}})
 
-# Aqui podemos hacer varias clases para el proyecto de Soundcloud, como la clase:
-# Artista, canciones, albumes, ect
 class User(BaseModel):
-# Estamos tipando los tipos de datos
-    id: int
-    name: str
-    surname: str
-    url: str
-    age: int
+    id_usuario: int
+    id_tipo_usuario: int
+    id_membresia: int
+    id_artista: int
+    id_oyente: int
+    id_direccion: int
+    nombre_usuario: str
+    fecha_registro: datetime
+    clave: str
 
 
-users_list =  [User(id=1, name="Daniel", surname="Barrientos", url="http://danielbanariba.com", age=25),
-                User(id=2, name="Nina", surname="Barrientos", url="http://ninabanariba.com", age=15)]
+users_list =  []
 
 
 # -----------------------------------------GET----------------------------------------------------
 
-
+# Ya seria directamente iteractuando con la base de datos
 #inicio de la pagina principal
 @router.get("/")
-async def root():
-    return "Hola Mundo, soy FastAPI"
+def get_users():
+    try:
+        cursor.execute("SELECT * FROM TBL_USUARIOS")
+        return cursor.fetchall()
+    except cx_Oracle.DatabaseError as e:
+        return {"error": str(e)}
 
 
-# devuelve un jSON cuando se llama usersJason
-@router.get("/usersJson")
-async def usersJson():
-    return [{"surname": "Daniel", "lasname": "Barrientos","url": "http://danielbanariba.com", "age": 25},
-            {"surname": "Nina", "lasname": "Barrientos", "url": "http://ninabanariba.com", "age": 15}] 
+@router.get("/{id_usuario}")
+def get_user(id_usuario: int):
+    cursor.execute("SELECT * FROM TBL_USUARIOS WHERE ID_USUARIO = :id", {"id": id_usuario})
+    user = cursor.fetchone()
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return User(id_usuario=user[0], id_tipo_usuario=user[1], id_membresia=user[2], id_artista=user[3], id_oyente=user[4], id_direccion=user[5], nombre_usuario=user[6], fecha_registro=user[7], clave=user[8])
 
 
 # Las operaciones GET son solo para obtener datos 
@@ -55,7 +72,15 @@ async def user(id: int):
 
 
 # -----------------------------------------POST----------------------------------------------------
-
+# Ya seria directamente iteractuando con la base de datos
+@router.post("/")
+def create_user(user: User):
+    try:
+        cursor.execute(f"INSERT INTO TBL_USUARIOS VALUES ({user.id_usuario}, {user.id_tipo_usuario}, {user.id_membresia}, {user.id_artista}, {user.id_oyente}, {user.id_direccion}, '{user.nombre_usuario}', {user.fecha_registro}, '{user.clave}')")
+        connection.commit()
+        return {"message": "User created successfully"}
+    except cx_Oracle.DatabaseError as e:
+        return {"error": str(e)}
 
 # con el metodo post lo que hacemos es crear nuevos usuarios
 # osea creamos ID nuevas
@@ -72,7 +97,15 @@ async def user(user: User):
 
 
 # -----------------------------------------PUT----------------------------------------------------
-
+# Ya seria directamente iteractuando con la base de datos
+@router.put("/{id_usuario}")
+def update_user(id_usuario: int, user: User):
+    try:
+        cursor.execute(f"UPDATE TBL_USUARIOS SET ID_TIPO_USUARIO = {user.id_tipo_usuario}, ID_MEMBRESIA = {user.id_membresia}, ID_ARTISTA = {user.id_artista}, ID_OYENTE = {user.id_oyente}, ID_DIRECCION = {user.id_direccion}, NOMBRE_USUARIO = '{user.nombre_usuario}', FECHA_REGISTRO = {user.fecha_registro}, CLAVE = '{user.clave}' WHERE ID_USUARIO = {id_usuario}")
+        connection.commit()
+        return {"message": "User updated successfully"}
+    except cx_Oracle.DatabaseError as e:
+        return {"error": str(e)}
 
 # Actualiza el usuario
 @router.put("/user/")
@@ -92,7 +125,15 @@ async def user(user: User):
 
 
 # ----------------------------------------DELETE----------------------------------------------------
-
+# Ya seria directamente iteractuando con la base de datos
+@router.delete("/{id_usuario}")
+def delete_user(id_usuario: int):
+    try:
+        cursor.execute(f"DELETE FROM TBL_USUARIOS WHERE ID_USUARIO = {id_usuario}")
+        connection.commit()
+        return {"message": "User deleted successfully"}
+    except cx_Oracle.DatabaseError as e:
+        return {"error": str(e)}
 
 @router.delete("/user/{id}")
 async def user(id: int):
