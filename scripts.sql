@@ -15,6 +15,7 @@ CREATE TABLE AUDIOS(
 
 -- Consulta para ver si se creo la tabla
 SELECT * FROM system.AUDIOS;
+DROP TABLE system.AUDIOS;
 
 --Crea la secuencia para el id de la tabla
 CREATE SEQUENCE id_audios_seq
@@ -22,3 +23,7 @@ START WITH 1
 INCREMENT BY 1
 NOCACHE;
 
+-- Consulta para ver si se creo la secuencia
+SELECT table_name FROM all_tables WHERE table_name = 'AUDIOS';
+
+select table_name, owner from all_tables where table_name = 'AUDIOS'
