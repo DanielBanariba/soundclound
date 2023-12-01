@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img align="center" src="backend\static\imagenes\soundcloud-icon-2048x888-k4c33ssc.png" alt="soundcloud" width="50%">
+  <img align="center" src="backend\static\img\soundcloud-icon-2048x888-k4c33ssc.png" alt="soundcloud" width="50%">
 </div>
 <br>
 
