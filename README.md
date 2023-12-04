@@ -10,7 +10,7 @@
 ## Ir a la documentacion para la creacion de un entorno virtual
 https://docs.python.org/3/library/venv.html
 
-## Crear un entorno virtual
+## 👨‍💻 Crear un entorno virtual
  ```sh
 python -m venv /path/to/new/virtual/environment
 ```
