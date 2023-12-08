@@ -8,6 +8,7 @@ router = APIRouter(prefix="/audio",
                     tags=["audio"],
                     responses={404: {"message": "Canción no encontrada"}})
 
+# -----------------------------------------POST----------------------------------------------------
 
 @router.post("/")
 async def crear_audio(id: int, name: str, author: str, duration: int, audio_file: UploadFile = File(...)):
@@ -17,6 +18,8 @@ async def crear_audio(id: int, name: str, author: str, duration: int, audio_file
         audio.write(content)
     agregar_audio(id, name, author, duration, file_path)
     return {"message": "Canción creada exitosamente"}
+
+# -----------------------------------------GET----------------------------------------------------
 
 @router.get("/{id}")
 async def get_audio(id: int):
@@ -35,6 +38,8 @@ async def get_audio(id: int):
     # Devolvemos la canción (Archivo de audio) como respuesta
     return StreamingResponse(audio_blob, media_type="audio/mpeg")#tenemoos que probar remplazar el StreamingResponse, por el FileResponse
 
+# -----------------------------------------PUT----------------------------------------------------
+
 @router.put("/{id}")
 async def actualizar_audio(id: int, name: str, author: str, duration: int, audio_file: UploadFile = File(...)):
     file_path = f"audios/{audio_file.filename}"
@@ -43,6 +48,8 @@ async def actualizar_audio(id: int, name: str, author: str, duration: int, audio
         audio.write(content)
     actualizar_audio(id, name, author, duration, file_path)
     return {"message": "Canción actualizada exitosamente"}
+
+# ----------------------------------------DELETE----------------------------------------------------
 
 @router.delete("/{id}")
 async def eliminar_audio(id: int):

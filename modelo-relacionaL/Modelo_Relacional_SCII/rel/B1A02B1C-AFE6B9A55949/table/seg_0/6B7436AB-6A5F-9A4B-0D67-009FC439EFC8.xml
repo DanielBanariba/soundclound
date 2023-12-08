@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B7436AB-6A5F-9A4B-0D67-009FC439EFC8" name="TBL_COPYRIGHT">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:08:53 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COPYRIGHT" id="E0978D0A-543B-EF3D-53FB-BD7D93D34A57">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:09:20 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CANCION" id="41C45509-A54D-110F-F719-6DCAEEDDE1F7">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:19:12 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8A293E4-9E50-F39A-7A75-40152E4C22E9" referredColumn="7F80D4E4-D877-D803-B663-2ABA87A5ED53"/>
+</associations>
+</Column>
+<Column name="ID_ARTISTA" id="97315F6F-76E3-48C9-F6CF-4396E208C7D4">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:19:43 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D62932E6-13D3-A58E-E7ED-C0A91BEB27B1" referredColumn="25D4B5D2-AF9B-1E7F-2C20-0CA3B074F050"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9ED937D6-A4FF-CF31-9A9B-2C1563A7B81B" name="TBL_COPYRIGHT_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:09:20 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0978D0A-543B-EF3D-53FB-BD7D93D34A57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB676C5A-00B3-4124-7291-941BC37902E8" name="TBL_COPYRIGHT_TB_CANCIONES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:19:12 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41C45509-A54D-110F-F719-6DCAEEDDE1F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83B22397-591B-DB83-78B5-D9E12EE8696A" name="TBL_COPYRIGHT_TB_ARTISTAS_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:19:43 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97315F6F-76E3-48C9-F6CF-4396E208C7D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

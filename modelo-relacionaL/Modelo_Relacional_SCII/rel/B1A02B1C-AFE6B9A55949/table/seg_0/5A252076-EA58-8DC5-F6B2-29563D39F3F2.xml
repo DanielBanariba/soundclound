@@ -1,0 +1,228 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A252076-EA58-8DC5-F6B2-29563D39F3F2" name="TBL_USUARIOS">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="FA8742A2-18E3-758F-A6B1-DAF9FAEF2BD8">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:07:26 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09F6A946-25B2-65B1-B841-D94F960A21E3" referredColumn="AAC2C7B7-F52E-20EE-3A0A-32F012061C01"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_USUARIO" id="AB5B2967-BDDF-ACC8-4E94-645973C5E637">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:14:02 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F9B6C1A-2E9D-74D3-E24D-319D6A771841" referredColumn="4B26FAFF-0F00-02D6-063A-BBD0B526AA9B"/>
+</associations>
+</Column>
+<Column name="ID_MEMBRESIA" id="4C65255F-48CB-4F11-4D7F-93DE2F849D4B">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:23:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87E04A9B-FB26-1127-5202-C1BA2563AC39" referredColumn="4C71FCEC-4F09-B030-1989-FEE61BD68776"/>
+</associations>
+</Column>
+<Column name="ID_ARTISTA" id="88F193A4-0D75-28A1-8A00-F763F444010E">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:35:22 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6B05673-C1D1-033D-2E2D-6EF4B5A5E403" referredColumn="25D4B5D2-AF9B-1E7F-2C20-0CA3B074F050"/>
+</associations>
+</Column>
+<Column name="ID_OYENTE" id="483CDB3A-3041-8C31-25C9-E890DB2ACA4B">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:40:43 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2F9F703-A40E-BD74-D5A4-8E3810383023" referredColumn="8EE5F1A8-B2CA-320B-258C-9AF6281E4F6D"/>
+</associations>
+</Column>
+<Column name="ID_DIRECCION" id="A6992713-3560-0D66-DFE9-211B8929DB7E">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 05:10:54 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A77D556-91AF-8CD6-CF71-994D6F2EF765" referredColumn="8231B558-125C-3356-4632-5B69D8B86FC0"/>
+</associations>
+</Column>
+<Column name="ID_GRUPO" id="FF7B4173-1CBC-33B5-D89B-9EDE1F49309F">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:03:01 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DD2319A-931F-5362-CBD9-C916D5AA3FC8" referredColumn="CD72EDE0-DA90-041B-E5C3-9990E4AF9461"/>
+</associations>
+</Column>
+<Column name="NOMBRE_USUARIO" id="C27681E2-63A3-8F61-32E8-66580A485536">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_REGISTRO" id="F752F2ED-A368-1168-3754-51912D1A3509">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:26:55 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLAVE" id="1A8A5E09-D38A-D169-1738-EC26E33C2F87">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11C7FB45-4326-8FC1-5630-E8C3BD4236F2" name="TBL_USUARIO_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA8742A2-18E3-758F-A6B1-DAF9FAEF2BD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A0EFA62-1515-D050-2263-05F9321138D7" name="TBL_USUARIO_TBL_PERSONA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:07:26 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA8742A2-18E3-758F-A6B1-DAF9FAEF2BD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8651CD65-8001-0F1D-2BDF-B762755075C9" name="TBL_USR_TBL_TP_USR_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:14:02 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB5B2967-BDDF-ACC8-4E94-645973C5E637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15C77743-37AB-4725-3CF9-E652D54D317D" name="TBL_USUARIO_TB_MEMBRESIA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:23:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C65255F-48CB-4F11-4D7F-93DE2F849D4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFA40224-AB71-0FDF-8187-E43704C8DFED" name="TBL_USUARIO_TB_ARTISTA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:35:22 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88F193A4-0D75-28A1-8A00-F763F444010E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F391906-FA49-D0D2-B20A-F83D5BB80B16" name="TBL_USUARIOS_TB_OYENTES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:40:43 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="483CDB3A-3041-8C31-25C9-E890DB2ACA4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B28532A-CBFB-DB6D-1FFB-2096898ABFFE" name="TBL_USUARIOS_TBL_DIRECCION_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 05:10:54 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6992713-3560-0D66-DFE9-211B8929DB7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ECD92DB-A798-0FFD-3997-A62521DB87D8" name="TBL_USUARIOS_TBL_GRUPOS_FK">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 04:03:01 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF7B4173-1CBC-33B5-D89B-9EDE1F49309F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

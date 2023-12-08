@@ -13,9 +13,9 @@ def conectar_a_oracle():
 
     # Configuración de la conexión Oracle
     config = {
-        'user': 'system',
+        'user': 'C##SOUNDCLOUD2',
         'password': 'root1234',
-        'dsn': 'localhost:1521/xe',  # Cambia esto según tu configuración
+        'dsn': 'localhost:1521/xe',
         'encoding': 'UTF-8'
     }
 

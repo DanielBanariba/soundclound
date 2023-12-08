@@ -1,5 +1,6 @@
-# Se muestran las canciones con derechos de autor, si la cancion se reproduce, es porque ya esta registrado en la base de datos y no se puede volver a subir
+#Una nueva idea es subir el archivo codificado en binario en una nuena tabla que tenga el mismo nombre, pero sacando el audio de la tabla a udio, convirtiendolo en binario y al tenerlo en binario subirlo a la tabla copyright
 
+# Se muestran las canciones con derechos de autor, si la cancion se reproduce, es porque ya esta registrado en la base de datos y no se puede volver a subir
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import StreamingResponse
 #exporta la configuracion ya creada de la base de datos

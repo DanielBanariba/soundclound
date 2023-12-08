@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA1BD3F1-80D9-99B9-B21E-3E8A5BC85F1A" name="TBL_MEMBRESIAS">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:21:39 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MEMBRESIA" id="4C71FCEC-4F09-B030-1989-FEE61BD68776">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_MEMBRESIA" id="386EC896-1FD7-4DD2-E934-D2F76A23146D">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:49 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28777AF8-F326-167B-F156-9E6C9979DB32" referredColumn="BCCB94CC-13A1-1BCE-ECD4-26AB749A244F"/>
+</associations>
+</Column>
+<Column name="FECHA_INICIO" id="A57EF4FD-F1B8-1BD9-BCF5-E47AC5865614">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="555B588D-FAFE-F0A0-AA32-C8EB439F78F9">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C3EB78A-7406-1021-70B3-331A0311B6FC" name="TBL_MEMBRESIA_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:36 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C71FCEC-4F09-B030-1989-FEE61BD68776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06C13585-29CD-D29D-92E8-1E0C439247A5" name="TBL_MEMB_TBL_TP_MEMB_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:22:49 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="386EC896-1FD7-4DD2-E934-D2F76A23146D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

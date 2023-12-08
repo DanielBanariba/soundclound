@@ -28,7 +28,7 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
             mp3_data = file.read()
 
         # Buscar la cancion en la base de datos
-        cursor.execute("SELECT * FROM system.AUDIOS WHERE archivo_mp3 = :mp3_data", {'mp3_data': mp3_data})
+        cursor.execute("SELECT * FROM tbl_audios WHERE archivo_mp3 = :mp3_data", {'mp3_data': mp3_data})
         result = cursor.fetchone()
 
         # Si la cancion ya existe, no se inserta
@@ -37,7 +37,7 @@ def insertar_archivo_mp3(ruta_archivo_mp3):
             return
 
         # Insertar el archivo MP3 en la tabla
-        cursor.execute("INSERT INTO system.AUDIOS (id, archivo_mp3) VALUES (seq.nextval, :mp3_data)", {'mp3_data': mp3_data})
+        cursor.execute("INSERT INTO tbl_audios (id, archivo_mp3) VALUES (seq.nextval, :mp3_data)", {'mp3_data': mp3_data})
 
         # Confirma la transacción
         connection.commit()
@@ -117,9 +117,9 @@ for archivo_mp3 in archivos_mp3:
     # Intentar insertar los datos en la tabla AUDIOS
     try:
         cursor.execute("""
-            INSERT INTO AUDIOS (id, titulo_cancion, portada, archivo_mp3)
-            VALUES (AUDIOS_SEQ.nextval, :1, :2, :3)
-        """, (titulo, ruta_imagen, ruta_completa))
+            INSERT INTO tbl_audios (id_audio, id_artista, id_copyright, archivo_mp3, titulo_cancion, portada)
+            VALUES (AUDIOS_SEQ.nextval, :1, :2, :3, :4, :5)
+        """, (id_artista, id_copyright, ruta_completa, titulo, ruta_imagen))
     except cx_Oracle.DatabaseError as e:
         error, = e.args
         if error.code != 1460:  # Si el código de error es diferente de 1460, relanzar la excepción

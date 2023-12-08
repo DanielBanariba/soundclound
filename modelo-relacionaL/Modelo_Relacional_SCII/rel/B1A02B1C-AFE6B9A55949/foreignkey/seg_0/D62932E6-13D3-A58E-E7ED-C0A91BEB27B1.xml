@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D62932E6-13D3-A58E-E7ED-C0A91BEB27B1" containerWithKeyObject="6B7436AB-6A5F-9A4B-0D67-009FC439EFC8" localFKIndex="83B22397-591B-DB83-78B5-D9E12EE8696A" name="TBL_COPYRIGHT_TB_ARTISTAS_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:19:43 UTC</createdTime>
+<ownerDesignName>Modelo_Relacional_SCII</ownerDesignName>
+<referredTableLongName>TB_ARTISTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C094C161-AC39-A3D7-49BF-594DF6B97AB3</referredTableID>
+<keyObject>3BE2CD85-F520-C04F-0665-C0DFCC26965F</keyObject>
+<referredKeyID>3BE2CD85-F520-C04F-0665-C0DFCC26965F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ARTISTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
