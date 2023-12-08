@@ -10,7 +10,7 @@
 ## Ir a la documentacion para la creacion de un entorno virtual
 https://docs.python.org/3/library/venv.html
 
-## Crear un entorno virtual
+## 👨‍💻 Crear un entorno virtual
  ```sh
 python -m venv /path/to/new/virtual/environment
 ```
@@ -98,7 +98,8 @@ Despues de a ver cloneado e instalado todas la dependencia necesarias y la estru
 #### Paso 1:
 
 Irse para la carpeta **backend/** y buscar el archivo **config.py**, dentro de ella va a encontrar una funcion llamado **"conectar_a_oracle()"** y dentro de hay, tiene que meter su configuracion de oracle y ejecuta el programa de python, tiene que salirle un mensaje por consola "Conectado a Oracle Database"
-```
+
+```python
 def conectar_a_oracle():
 
     # Configuración de la conexión Oracle
