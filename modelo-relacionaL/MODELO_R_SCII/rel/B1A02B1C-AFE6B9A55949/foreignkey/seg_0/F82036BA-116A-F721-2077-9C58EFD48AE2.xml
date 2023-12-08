@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F82036BA-116A-F721-2077-9C58EFD48AE2" containerWithKeyObject="8C33A24C-7531-E934-BB37-303936D501FE" localFKIndex="2D7FDCF9-AFBB-7092-3894-CA356911116F" name="TBL_AUDIOS_TBL_COPYRIGHT_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 23:09:42 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<referredTableLongName>TBL_COPYRIGHT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6B7436AB-6A5F-9A4B-0D67-009FC439EFC8</referredTableID>
+<keyObject>9ED937D6-A4FF-CF31-9A9B-2C1563A7B81B</keyObject>
+<referredKeyID>9ED937D6-A4FF-CF31-9A9B-2C1563A7B81B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_COPYRIGHT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

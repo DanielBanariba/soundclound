@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C094C161-AC39-A3D7-49BF-594DF6B97AB3" name="TBL_ARTISTAS">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:25:00 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ARTISTA" id="25D4B5D2-AF9B-1E7F-2C20-0CA3B074F050">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:32:15 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_OYENTE" id="32E69AE1-FFD0-CBBC-1AD6-3373F338FCEA">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:31:34 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DB9C03F-1B5A-8122-04CD-B469621EE5A7" referredColumn="8EE5F1A8-B2CA-320B-258C-9AF6281E4F6D"/>
+</associations>
+</Column>
+<Column name="NOMBRE_ARTISTA" id="C355ACBC-9CD2-2C65-2219-33591D73B48A">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:55:33 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="5A5971C2-7577-510F-A1DA-0D7D6FCD1EBF">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:26:52 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BE2CD85-F520-C04F-0665-C0DFCC26965F" name="TBL_ARTISTA_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-10-22 22:26:52 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25D4B5D2-AF9B-1E7F-2C20-0CA3B074F050"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5A7C231-F4C0-6AA7-0D7E-C41F7859F3F5" name="TBL_ARTISTAS_TBL_OYENTES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:31:34 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32E69AE1-FFD0-CBBC-1AD6-3373F338FCEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

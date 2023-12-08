@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C246D62-FAF5-04D3-08FF-1BE4D213007D" name="DEPARTAMENTOS">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO" id="76DE0BD5-876B-C919-76FC-CC514AFADF80">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PAIS" id="5C7EB85C-41FF-2CB8-3DFA-2E3EE78EAFAB">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 05:08:42 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BA21D46-FA8C-4698-CFE4-FC900736346C" referredColumn="5F530E62-87FF-4FEF-6859-E6E44C341EC4"/>
+</associations>
+</Column>
+<Column name="NOMBRE_DEPARTAMENTO" id="0ABE0726-1408-F079-A6CB-365C2867A41E">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2924220C-3FD8-6E92-858F-758DD5B5A844" name="DEPARTAMENTOS_PK">
+<createdBy>banar</createdBy>
+<createdTime>2023-10-23 00:33:45 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76DE0BD5-876B-C919-76FC-CC514AFADF80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61C84D17-692E-5000-4BF5-1BAFB24CD860" name="DEPARTAMENTOS_TBL_PAISES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 05:08:42 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C7EB85C-41FF-2CB8-3DFA-2E3EE78EAFAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

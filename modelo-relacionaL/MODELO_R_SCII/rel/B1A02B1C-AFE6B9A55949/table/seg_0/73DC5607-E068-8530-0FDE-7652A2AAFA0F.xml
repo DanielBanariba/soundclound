@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73DC5607-E068-8530-0FDE-7652A2AAFA0F" name="TBL_CANCIONES_X_ARTISTAS">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:46:21 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CANCION" id="64AE7B3B-BBED-CD19-4F62-E52484980F9E">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:47:06 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C7CE559-79EA-E23E-840A-CEA8E3341963" referredColumn="7F80D4E4-D877-D803-B663-2ABA87A5ED53"/>
+</associations>
+</Column>
+<Column name="ID_ARTISTA" id="1437486A-D901-0EAF-4C01-08CA4A426858">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:47:23 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DFA93B9-AE6F-3718-B5D9-077FD83BEADE" referredColumn="25D4B5D2-AF9B-1E7F-2C20-0CA3B074F050"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2688B976-743F-7004-B057-1C2107EF9FCD" name="TBL_CAN_X_ARTIS_TBL_CAN_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:47:06 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64AE7B3B-BBED-CD19-4F62-E52484980F9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E0F3E6C-3F9E-03BA-AF35-3A9C4AAA3CFB" name="TBL_CAN_X_ARTIS_TBL_ARTIS_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:47:23 UTC</createdTime>
+<ownerDesignName>MODELO_R_SCII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1437486A-D901-0EAF-4C01-08CA4A426858"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
