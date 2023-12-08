@@ -79,16 +79,6 @@ for archivo_mp3 in archivos_mp3:
     ruta_completa = os.path.join(ruta_audios, archivo_mp3)
     insertar_archivo_mp3(ruta_completa)
 
-# Crear la secuencia si no existe
-try:
-    cursor.execute("SELECT AUDIOS_SEQ.nextval FROM dual")
-except cx_Oracle.DatabaseError as e:
-    error, = e.args
-    if error.code == 2289:  # ORA-02289: sequence does not exist
-        cursor.execute("CREATE SEQUENCE AUDIOS_SEQ START WITH 1 INCREMENT BY 1")
-    else:
-        raise 
-
 # Iterar sobre la lista de archivos MP3
 for archivo_mp3 in archivos_mp3:
     ruta_completa = os.path.join(ruta_audios, archivo_mp3)
@@ -110,22 +100,9 @@ for archivo_mp3 in archivos_mp3:
         with open(ruta_imagen, "wb") as img_file:
             img_file.write(imagen)
 
-    # Imprimir las rutas de los archivos MP3 e imágenes
-    print(f"Ruta del archivo MP3: {ruta_completa}")
-    print(f"Ruta de la imagen: {ruta_imagen}")
-
-    # Intentar insertar los datos en la tabla AUDIOS
-    try:
-        cursor.execute("""
-            INSERT INTO tbl_audios (id_audio, id_artista, id_copyright, archivo_mp3, titulo_cancion, portada)
-            VALUES (AUDIOS_SEQ.nextval, :1, :2, :3, :4, :5)
-        """, (id_artista, id_copyright, ruta_completa, titulo, ruta_imagen))
-    except cx_Oracle.DatabaseError as e:
-        error, = e.args
-        if error.code != 1460:  # Si el código de error es diferente de 1460, relanzar la excepción
-            raise
-        else:
-            pass  # No hacer nada si el código de error es 1460
+    # Imprime las rutas de los archivos MP3 e imágenes
+    # print(f"Ruta del archivo MP3: {ruta_completa}")
+    # print(f"Ruta de la imagen: {ruta_imagen}")
 
 # Confirmar los cambios y cerrar la conexión
 connection.commit()

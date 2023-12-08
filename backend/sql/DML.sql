@@ -106,7 +106,15 @@ VALUES (26, 'Speed Metal', 'Subgénero del metal caracterizado por su rapidez y 
 
 ------------------------------------------------------------TBL_CANCIONES-------------------------------------------------------------
 
+-- Ejecutar el script de insert_info.py
+
 ------------------------------------------------------------TBL_PERSONAS-------------------------------------------------------------
+-- Continuar haciendo mas hasta que se modifique el script la tabla 
+INSER INTO TBL_PERSONAS (ID_PERSONA, NUMERO_ID, NOMBRE, APELLIDO, FECHA_NACIMIENTO, EMAIL, TELEFONO)
+VALUES (1, 0801-1998-06034, 'Daniel', 'Barrientos', to_date('19-03-98','DD-MM-RR'), banaribad@gmai.com, 33245827);
 
 ------------------------------------------------------------TBL_USUARIOS-------------------------------------------------------------
+-- Continuar haciendo mas hasta que se modifique el script la tabla 
+INSER INTO TBL_USUARIOS (ID_USUARIO, ID_TIPO_USUARIO, ID_MEMBRESIA, ID_OYENTE, ID_DIRECCION, NOMBRE_USUARIO, FECHA_REGISTRO, CLAVE) 
+VALUES (1, 1, 1, 1, 1, 'danielbanariba', to_date('19-03-98','DD-MM-RR'), '1234');
 
