@@ -48,7 +48,7 @@ async def get_all_audios():
 @router.get("/{audio_id}")
 async def get_audio(audio_id: int):
     # Consulta para obtener el archivo binario desde la base de datos
-    query = "SELECT archivo_mp3 FROM AUDIOS WHERE ID = :audio_id"
+    query = "SELECT ARCHIVO_MP3 FROM TBL_AUDIOS WHERE ID_CANCION = :audio_id"
     cursor.execute(query, {'audio_id': audio_id})
     result = cursor.fetchone()
 

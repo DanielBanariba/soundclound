@@ -21,7 +21,7 @@ router = APIRouter(prefix="/count",
 async def get_ids():
     try:
         print("Obteniendo IDs de canciones")
-        cursor.execute('SELECT * FROM AUDIOS') #Obtener todos la informacion de la tabla AUDIOS, PERO! solo se necesita el ID, cambiar la consulta en dado caso de error, osea cambiar en * por ID
+        cursor.execute('SELECT * FROM TBL_AUDIOS') #Obtener todos la informacion de la tabla AUDIOS, PERO! solo se necesita el ID, cambiar la consulta en dado caso de error, osea cambiar en * por ID
         results = cursor.fetchall()
         ids = [row[0] for row in results]
         return {"ids": ids}
