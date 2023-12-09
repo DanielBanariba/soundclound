@@ -71,23 +71,33 @@ soundcloud/
 |- assets/
 |- backend/
   |-- audios/
-  |-- img/
+  |-- db/
+    |--- models/
+    |--- client.py
   |-- routers/
   |-- scripts/
     |--- insert_audio.py
     |--- insert_info.py
+  |-- sql/
+    |--- DDL.sql
+    |--- DML.sql
+    |--- SECUENCE.sql
+    |--- USER.sql
   |-- static/
     |--- img
     |--- templates 
       |---- index.html
-  |-- config.py
   |-- db_audio.py
-  |-- main.py
   |-- new_tables_in_database.py
   |-- ruta_cancion
 |- env/
+|- img/
+|- modelo-relacional/
+  |-- Modelo_relacionalSCIII/
+  |-- Relational2_1.png
+  |-- Script3_SCII.ddl
 |- README.md
-|- scripts.sql
+|- main.py
 ```
 
 <!-- TENGO QUE DEJAR PASO A PASO QUE TIENE QUE HACER! -->
@@ -97,7 +107,7 @@ Despues de a ver cloneado e instalado todas la dependencia necesarias y la estru
 
 #### Paso 1:
 
-Irse para la carpeta **backend/** y buscar el archivo **config.py**, dentro de ella va a encontrar una funcion llamado **"conectar_a_oracle()"** y dentro de hay, tiene que meter su configuracion de oracle y ejecuta el programa de python, tiene que salirle un mensaje por consola "Conectado a Oracle Database"
+Irse para la carpeta **backend/** despues a la carpeta **db/** y buscar el archivo **client.py**, dentro de ella va a encontrar una funcion llamado **"conectar_a_oracle()"** y dentro de hay, tiene que meter su configuracion de oracle y ejecuta el programa de python, tiene que salirle un mensaje por consola "Conectado a Oracle Database"
 
 ```python
 def conectar_a_oracle():
@@ -114,7 +124,7 @@ def conectar_a_oracle():
 
 #### Paso 2:
 
-Abrir el archivo **scripts.sql**, copiar el contenido dentro del archivo y ejecutar el query en programa Oracle SQL Developer
+Volver a ir a la carpeta **backend/** e ir a la carpeta **sql/** Abrir el archivo **USER.sql**, copiar el contenido dentro del archivo y ejecutar el query en programa Oracle SQL Developer para crear el usuario SOUNDCLOUD, repetir el mismo proceso con el **DDL.sql** y el **DML.sql**
 
 
 #### Paso 3:
@@ -124,7 +134,7 @@ Dentro de la carpeta audios que se encuentra ubicado en el **backend/audios** pu
 
 #### Paso 4:
 
-Ahora sigue meter toda la informacion correspondiente a la base de datos, nos dirigimos hacia la carpeta backend/scripts y ejecutamos el programa **insert_audio.py** y **despues el insert_info.py**
+Ahora sigue meter toda la informacion correspondiente a la base de datos, nos dirigimos hacia la carpeta **backend/scripts** y ejecutamos el programa **insert_audio.py** y despues el **insert_info.py**
 
 <!-- Run Locally -->
 ## :running: Correr el servidor
