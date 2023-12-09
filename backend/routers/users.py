@@ -16,21 +16,6 @@ router = APIRouter(prefix="/users",
                     tags=["users"], 
                     responses={404: {"message": "No encontrado"}})
 
-class User(BaseModel):
-    id_usuario: int
-    id_tipo_usuario: int
-    id_membresia: int
-    id_artista: int
-    id_oyente: int
-    id_direccion: int
-    nombre_usuario: str
-    fecha_registro: datetime
-    clave: str
-
-
-users_list =  []
-
-
 # -----------------------------------------GET----------------------------------------------------
 
 # Ya seria directamente iteractuando con la base de datos
