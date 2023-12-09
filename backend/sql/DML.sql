@@ -238,3 +238,24 @@ INSERT INTO TBL_PLATAFORMAS (ID_PLATAFORMA, NOMBRE_PLATAFORMA, URL_PLATAFORMA) V
 
 
 ------------------------------------------------------------TBL_ARTISTAS--------------------------------------------------------------------
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('1', '1', 'Tierra Santa', 'Banda de power metal');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('2', '2', 'Cuca', 'Banda de hardrock');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('3', '3', 'Daughters', 'Banda de noise rock');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('4', '4', 'kontrust', 'Banda de crossover');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('5', '5', 'Brujeria', 'Banda de death metal');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('6', '6', 'Barathrum', 'Banda de black metal');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('7', '7', 'Zoebeasth', 'Banda de grindcore');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('8', '8', 'Glowsum', 'Banda de deathcore');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('9', '9', 'A.N.I.M.A.L.', 'Banda de groove metal');
+INSERT INTO TBL_ARTISTAS (ID_ARTISTA, ID_OYENTE, NOMBRE_ARTISTA, DESCRIPCION) VALUES ('10', '10', 'Russkaja', 'Banda de ska punk');
+
+
+------------------------------------------------------------TBL_GRUPOS--------------------------------------------------------------------
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('11', '1', 'ACxDC', 'Banda de powerviolence');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '2', 'The Crossed', 'Banda de thrash metal');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '2', 'Teeting', 'Banda de grindcore');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '4', 'BASCA', 'Banda de hardrock');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '5', 'Рогатые трупоеды', 'Banda de black metal');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '6', 'Betzefer', 'Banda de groove metal');
+INSERT INTO TBL_GRUPOS (ID_GRUPO, ID_OYENTE, NOMBRE_BANDA, DESCRIPCION) VALUES ('12', '7', 'John 5', 'Banda de industrial metal');
+

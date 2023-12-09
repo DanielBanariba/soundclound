@@ -1,7 +1,7 @@
 import datetime
 from pydantic import BaseModel
 
-class Usuario(BaseModel):
+class Usuarios(BaseModel):
     id_usuario: int
     id_tipo_usuario: int
     id_membresia: int

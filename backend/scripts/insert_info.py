@@ -1,4 +1,5 @@
-import cx_Oracle, os, eyed3, sys
+import string
+import cx_Oracle, os, eyed3, sys, random
 sys.path.append(os.path.join(os.getcwd(), 'backend'))
 from db.client import conectar_a_oracle
 from datetime import datetime, timedelta
@@ -23,7 +24,9 @@ for filename in os.listdir(ruta_audios):
         print(f"Ruta del archivo: {os.path.join(ruta_audios, filename)}")
         print(f"Título de la canción: {audiofile.tag.title}") 
         print(f"Género del audio: {audiofile.tag.genre.name}")
+        print(f"Artista: {audiofile.tag.artist}")
 
+        nombre_artista = audiofile.tag.artist
         titulo = audiofile.tag.title
         numero_cancion = audiofile.tag.track_num[0]
         anio = audiofile.tag.getBestDate().year
@@ -38,6 +41,7 @@ for filename in os.listdir(ruta_audios):
             # Si hay una coincidencia, guardar la información de la canción en la base de datos con el ID de género correspondiente
             cursor.execute("INSERT INTO TBL_CANCIONES (titulo, numero_cancion, anio, duracion, id_genero) VALUES (:1, :2, :3, :4, :5)",
                            (titulo, numero_cancion, anio_date, duracion, result[0]))
+            
         # # Obtener el ID_GENERO de la tabla TBL_GENERO
         # id_genero = cursor.execute(f"SELECT ID_GENERO FROM TBL_GENERO WHERE LOWER(NOMBRE) = '{genero.lower()}'").fetchone()[0]
 

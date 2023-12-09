@@ -1,7 +1,7 @@
 import datetime
 from pydantic import BaseModel
 
-class Persona(BaseModel):
+class Personas(BaseModel):
     id_persona: int
     numero_id: int
     nombre: str
