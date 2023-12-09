@@ -147,11 +147,17 @@ Si va a levatar el servidor desde visual studio code
 ```sh
 uvicorn main:app
 ```
+<!-- TechStack -->
+## 👀 Ir a la documentación
 
-Ir a la documentación: 
-  Con Swagger: -127.0.0.1:8000/docs  
-  Con Redocly: -127.0.0.1:8000/recdo
-
+### Swagger:
+```sh
+127.0.0.1:8000/docs
+```
+### Redocly:
+```sh
+127.0.0.1:8000/redoc
+```
 <!-- TechStack -->
 ## :space_invader: Tecnologias utilizadas
 <p align="left">
