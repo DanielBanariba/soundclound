@@ -3,7 +3,8 @@ from pydantic import BaseModel
 from datetime import datetime
 import cx_Oracle, os, sys
 sys.path.append(os.path.join(os.getcwd(), 'backend'))#Obtener la ruta del directorio actual y concatenarla con el subdirectorio de los archivos de audio
-from config import conectar_a_oracle
+
+from db.client import conectar_a_oracle
 
 # Obtener la configuración de la base de datos
 configuracion = conectar_a_oracle()
@@ -15,6 +16,21 @@ cursor = connection.cursor()
 router = APIRouter(prefix="/users", 
                     tags=["users"], 
                     responses={404: {"message": "No encontrado"}})
+
+class User(BaseModel):
+    id_usuario: int
+    id_tipo_usuario: int
+    id_membresia: int
+    id_artista: int
+    id_oyente: int
+    id_direccion: int
+    nombre_usuario: str
+    fecha_registro: datetime
+    clave: str
+
+
+users_list =  []
+
 
 # -----------------------------------------GET----------------------------------------------------
 

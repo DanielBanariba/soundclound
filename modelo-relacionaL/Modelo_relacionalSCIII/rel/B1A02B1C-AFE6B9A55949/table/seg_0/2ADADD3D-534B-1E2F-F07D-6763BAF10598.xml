@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ADADD3D-534B-1E2F-F07D-6763BAF10598" name="TBL_IDIOMAS">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:25:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_IDIOMA" id="FBCA1B56-68AD-5E21-22A6-7FDFB76AAFDF">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:25:59 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_IDIOMA" id="C9849481-7EA4-0B92-7E22-AD2572F3ADC9">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:26:49 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREVIATURA" id="E57A2A92-7401-C184-9A7A-ED48417439AB">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:26:49 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00D1981C-60F9-C0EA-CD34-B54DF310D6CA" name="TBL_IDIOMAS_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:25:59 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBCA1B56-68AD-5E21-22A6-7FDFB76AAFDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

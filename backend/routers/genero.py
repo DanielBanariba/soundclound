@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from datetime import datetime
 import cx_Oracle, os, sys
 sys.path.append(os.path.join(os.getcwd(), 'backend'))#Obtener la ruta del directorio actual y concatenarla con el subdirectorio de los archivos de audio
-from config import conectar_a_oracle
+from db.client import conectar_a_oracle
 
 # Obtener la configuración de la base de datos
 configuracion = conectar_a_oracle()

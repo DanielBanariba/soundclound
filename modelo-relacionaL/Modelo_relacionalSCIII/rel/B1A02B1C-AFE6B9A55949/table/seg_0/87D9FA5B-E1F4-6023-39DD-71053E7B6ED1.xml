@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87D9FA5B-E1F4-6023-39DD-71053E7B6ED1" name="TBL_LETRAS_CANCIONES">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:16:59 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LETRA_CANCION" id="27A7947F-65C8-21D2-E376-616E79D6D29E">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:18:12 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_IDIOMA" id="3C352996-059B-A00B-19AE-539F6A6D02D9">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50CC00D8-5BC2-8531-7D49-3C4156E0829D" referredColumn="FBCA1B56-68AD-5E21-22A6-7FDFB76AAFDF"/>
+</associations>
+</Column>
+<Column name="ID_CANCION" id="5E32DBED-C60D-9C8E-306D-E8CC8B65B6D6">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:30:53 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FF9DE8E-B80A-1420-4D6D-C94BA523C906" referredColumn="7F80D4E4-D877-D803-B663-2ABA87A5ED53"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="B1D37AB9-1723-650F-DD1F-80321206011C">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:21:27 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVO" id="919B45A4-7459-7020-0105-D6ABF7CD6795">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:28:19 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13D54925-EDF2-2EEA-1BDE-27091E324872" name="TBL_LETRAS_CANCIONES_PK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:18:12 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A7947F-65C8-21D2-E376-616E79D6D29E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA501F60-7B45-A096-7DEA-E4D2ADB50F8A" name="TBL_LET_CAN_TBL_IDIOM_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:28:32 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C352996-059B-A00B-19AE-539F6A6D02D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4E110A2-3A6D-1E9E-53BC-BCD2F8142924" name="TBL_LET_CAN_TB_CAN_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:30:53 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E32DBED-C60D-9C8E-306D-E8CC8B65B6D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

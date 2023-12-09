@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import StreamingResponse
 #exporta la configuracion ya creada de la base de datos
-from config import conectar_a_oracle
+from db.client import conectar_a_oracle
 import cx_Oracle, io
 from fastapi.templating import Jinja2Templates
 from fastapi import Depends

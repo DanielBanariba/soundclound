@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C880ED3A-D89E-1596-6CA4-35CCFEE3266E" containerWithKeyObject="9E6B48AD-BFDC-148F-380C-E465F4672EDC" localFKIndex="DF582CFF-B0BE-1201-ED25-D7C77FDEA58E" name="TBL_GRUPOS_TBL_OYENTES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:31:43 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<referredTableLongName>TBL_OYENTES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>846CA1E3-4E08-F35F-D74B-6B56908B1924</referredTableID>
+<keyObject>AC942334-5C38-7ACF-35EF-72A4DEBA4B50</keyObject>
+<referredKeyID>AC942334-5C38-7ACF-35EF-72A4DEBA4B50</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_OYENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

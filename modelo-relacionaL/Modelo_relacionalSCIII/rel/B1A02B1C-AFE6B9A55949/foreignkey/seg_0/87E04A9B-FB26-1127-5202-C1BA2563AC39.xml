@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="87E04A9B-FB26-1127-5202-C1BA2563AC39" containerWithKeyObject="5A252076-EA58-8DC5-F6B2-29563D39F3F2" localFKIndex="15C77743-37AB-4725-3CF9-E652D54D317D" name="TBL_USUARIO_TB_MEMBRESIA_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-11-21 04:23:36 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<referredTableLongName>TBL_MEMBRESIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA1BD3F1-80D9-99B9-B21E-3E8A5BC85F1A</referredTableID>
+<keyObject>2C3EB78A-7406-1021-70B3-331A0311B6FC</keyObject>
+<referredKeyID>2C3EB78A-7406-1021-70B3-331A0311B6FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MEMBRESIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

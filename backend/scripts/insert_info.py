@@ -1,6 +1,6 @@
 import cx_Oracle, os, eyed3, sys
 sys.path.append(os.path.join(os.getcwd(), 'backend'))
-from config import conectar_a_oracle
+from db.client import conectar_a_oracle
 from datetime import datetime, timedelta
 from cx_Oracle import Date
 

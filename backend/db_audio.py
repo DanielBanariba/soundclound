@@ -1,4 +1,4 @@
-from config import conectar_a_oracle
+from db.client import conectar_a_oracle
 import cx_Oracle
 # Obtener la configuración de la base de datos
 configuracion = conectar_a_oracle()

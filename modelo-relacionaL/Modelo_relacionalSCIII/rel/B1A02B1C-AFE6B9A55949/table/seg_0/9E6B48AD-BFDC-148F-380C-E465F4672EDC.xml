@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E6B48AD-BFDC-148F-380C-E465F4672EDC" name="TBL_GRUPOS">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:58:18 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GRUPO" id="CD72EDE0-DA90-041B-E5C3-9990E4AF9461">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:59:52 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_OYENTE" id="24187AD5-E808-240A-0744-E8060F7343E5">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:31:43 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C880ED3A-D89E-1596-6CA4-35CCFEE3266E" referredColumn="8EE5F1A8-B2CA-320B-258C-9AF6281E4F6D"/>
+</associations>
+</Column>
+<Column name="NOMBRE_BANDA" id="D15FBFAD-31F3-57C2-60D5-CEE223D3F4BD">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:59:52 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="25C998ED-7602-A9BF-8564-801D17AD92A4">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:59:52 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56F52768-00BC-5AC4-7B46-D5C45EB7712C" name="TBL_GRUPOS_PK">
+<createdBy>carlo</createdBy>
+<createdTime>2023-11-29 03:59:52 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD72EDE0-DA90-041B-E5C3-9990E4AF9461"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF582CFF-B0BE-1201-ED25-D7C77FDEA58E" name="TBL_GRUPOS_TBL_OYENTES_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:31:43 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24187AD5-E808-240A-0744-E8060F7343E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

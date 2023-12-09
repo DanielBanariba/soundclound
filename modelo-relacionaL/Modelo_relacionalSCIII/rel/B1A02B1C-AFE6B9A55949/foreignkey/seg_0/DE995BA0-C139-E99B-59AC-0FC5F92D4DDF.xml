@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DE995BA0-C139-E99B-59AC-0FC5F92D4DDF" containerWithKeyObject="2EF578E7-1564-DF01-30E7-0A58E6F0A5B0" localFKIndex="CC09C31E-48F7-049E-8472-98094D9D1A19" name="TBL_SHARES_TBL_PLATAFORMAS_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-07 22:41:20 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<referredTableLongName>TBL_PLATAFORMAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EEB4AED9-82F6-83E2-057F-14C55D013D15</referredTableID>
+<keyObject>02DB747C-3F9A-0EC6-8C2C-B1C9158C34A0</keyObject>
+<referredKeyID>02DB747C-3F9A-0EC6-8C2C-B1C9158C34A0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PLATAFORMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

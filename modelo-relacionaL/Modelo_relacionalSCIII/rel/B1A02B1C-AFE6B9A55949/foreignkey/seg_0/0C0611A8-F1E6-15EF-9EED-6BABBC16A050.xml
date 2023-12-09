@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C0611A8-F1E6-15EF-9EED-6BABBC16A050" containerWithKeyObject="5D805993-E1B3-A34B-B429-EBD75EC35F0B" localFKIndex="DCE3B067-A31C-11E3-6E5D-BB717DB03AED" name="TBL_CAN_X_GRP_TBL_GRP_FK">
+<createdBy>ferna</createdBy>
+<createdTime>2023-12-08 07:49:14 UTC</createdTime>
+<ownerDesignName>Modelo_relacionalSCIII</ownerDesignName>
+<referredTableLongName>TBL_GRUPOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9E6B48AD-BFDC-148F-380C-E465F4672EDC</referredTableID>
+<keyObject>56F52768-00BC-5AC4-7B46-D5C45EB7712C</keyObject>
+<referredKeyID>56F52768-00BC-5AC4-7B46-D5C45EB7712C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_GRUPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

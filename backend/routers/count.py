@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter, HTTPException, status
 #exporta la configuracion ya creada de la base de datos
-from config import conectar_a_oracle
+from db.client import conectar_a_oracle
 import cx_Oracle
 import logging
 
